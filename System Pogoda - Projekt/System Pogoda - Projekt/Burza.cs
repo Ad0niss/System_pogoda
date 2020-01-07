@@ -31,3 +31,4 @@ namespace System_Pogoda___Projekt
         }
     }
 }
+// szybki teścik czy wszystko śmiga
