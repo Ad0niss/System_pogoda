@@ -3,8 +3,8 @@
   <obszar>Śląsk</obszar>
   <Stacje>
     <Stacja_pomiarowa>
-      <dataObserwacji>2020-01-06T12:24:00.783815+01:00</dataObserwacji>
-      <dataZakonczenia>2020-01-06T12:24:00.7899139+01:00</dataZakonczenia>
+      <dataObserwacji>2020-01-10T10:06:49.1343201+01:00</dataObserwacji>
+      <dataZakonczenia>2020-01-10T10:06:49.1403507+01:00</dataZakonczenia>
       <zagrozenie>neutralne</zagrozenie>
       <srednieCisnienieAtm>1000</srednieCisnienieAtm>
       <temperatura>0</temperatura>
@@ -52,8 +52,8 @@
       </Zjawiska>
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>
-      <dataObserwacji>2020-01-06T12:24:00.79041+01:00</dataObserwacji>
-      <dataZakonczenia>2020-01-06T12:24:00.79041+01:00</dataZakonczenia>
+      <dataObserwacji>2020-01-10T10:06:49.1403507+01:00</dataObserwacji>
+      <dataZakonczenia>2020-01-10T10:06:49.1403507+01:00</dataZakonczenia>
       <zagrozenie>neutralne</zagrozenie>
       <srednieCisnienieAtm>1000</srednieCisnienieAtm>
       <temperatura>0</temperatura>
@@ -65,8 +65,8 @@
       <Zjawiska />
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>
-      <dataObserwacji>2020-01-06T12:24:00.79041+01:00</dataObserwacji>
-      <dataZakonczenia>2020-01-06T12:24:00.79041+01:00</dataZakonczenia>
+      <dataObserwacji>2020-01-10T10:06:49.1403507+01:00</dataObserwacji>
+      <dataZakonczenia>2020-01-10T10:06:49.1403507+01:00</dataZakonczenia>
       <zagrozenie>neutralne</zagrozenie>
       <srednieCisnienieAtm>1000</srednieCisnienieAtm>
       <temperatura>0</temperatura>
@@ -78,8 +78,8 @@
       <Zjawiska />
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>
-      <dataObserwacji>2020-01-06T12:24:00.79041+01:00</dataObserwacji>
-      <dataZakonczenia>2020-01-06T12:24:00.79041+01:00</dataZakonczenia>
+      <dataObserwacji>2020-01-10T10:06:49.1403507+01:00</dataObserwacji>
+      <dataZakonczenia>2020-01-10T10:06:49.1403507+01:00</dataZakonczenia>
       <zagrozenie>neutralne</zagrozenie>
       <srednieCisnienieAtm>1000</srednieCisnienieAtm>
       <temperatura>0</temperatura>
