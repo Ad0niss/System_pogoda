@@ -37,6 +37,7 @@
         <Label x:Name="lab_sunrise" Content="" HorizontalAlignment="Left" Height="43" Margin="710,149,0,0" VerticalAlignment="Top" Width="140" FontFamily="Century Gothic" FontSize="19" Foreground="#FFBFC6D1"/>
         <Label x:Name="lab_sunset" Content="" HorizontalAlignment="Left" Margin="710,273,0,0" VerticalAlignment="Top" Width="140" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
         <Label x:Name="lab_wind" Content="" HorizontalAlignment="Left" Margin="710,411,0,0" VerticalAlignment="Top" Width="140" Height="43" FontFamily="Century Gothic" FontSize="22" Foreground="#FFBFC6D1"/>
+        <Image x:Name="logo_icon" Height="325" Margin="0,149,10,35" VerticalAlignment="Top" Width="932" Source="logo_icon.png"/>
 
 
     </Grid>

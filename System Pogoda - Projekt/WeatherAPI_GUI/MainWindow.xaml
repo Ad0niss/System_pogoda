@@ -28,7 +28,8 @@
                 <ImageBrush ImageSource="iconfinder_users_497224.png" Stretch="Uniform" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        
+        <Image HorizontalAlignment="Left" Height="313" Margin="359,125,0,0" VerticalAlignment="Top" Width="509" Source="logo_icon.png"/>
+
 
     </Grid>
 </Window>

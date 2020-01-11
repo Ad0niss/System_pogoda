@@ -22,8 +22,9 @@ namespace WeatherAPI_GUI
     {
         public okno_pogodowe()
         {
-            
+
             InitializeComponent();
+
             wind.Visibility = Visibility.Collapsed;
             humid.Visibility = Visibility.Collapsed;
             cloudy.Visibility = Visibility.Collapsed;
@@ -40,6 +41,7 @@ namespace WeatherAPI_GUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            logo_icon.Visibility = Visibility.Collapsed;
             ukryj();
             // w tablicy są odpowiedni przekazane wartotci: temperatury, wilogotnosci, wiatru, ogolnej pogody, wschodu i zachodu oraz numer ogolnej pogody
             

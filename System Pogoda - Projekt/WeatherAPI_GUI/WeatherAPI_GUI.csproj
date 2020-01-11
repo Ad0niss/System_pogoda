@@ -156,5 +156,8 @@
   <ItemGroup>
     <Resource Include="cloudy.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
