@@ -10,7 +10,7 @@ namespace System_Pogoda___Projekt
 {
     public enum Skala_zagr { neutralne, możliwie_niebezpieczne, niebezpieczne, bardzo_niebezpieczne}
     [Serializable]
-    public abstract class Zjawisko_pogodowe
+    public abstract class Zjawisko_pogodowe : IComparable<Zjawisko_pogodowe>
     {
         public DateTime dataObserwacji;
         public DateTime dataZakonczenia;
@@ -110,6 +110,19 @@ namespace System_Pogoda___Projekt
                     throw new WrongCisnienieException();
                 }
 
+            }
+        }
+
+        public int CompareTo(Zjawisko_pogodowe other)
+        {
+            int wynik = DataObserwacji.CompareTo(other.DataObserwacji);
+            if (wynik == 0)
+            {
+                return DataZakonczenia.CompareTo(other.DataZakonczenia);
+            }
+            else
+            {
+                return wynik;
             }
         }
 

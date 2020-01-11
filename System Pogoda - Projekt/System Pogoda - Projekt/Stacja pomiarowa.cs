@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     [Serializable]
-    public class Stacja_pomiarowa : Zjawisko_pogodowe
+    public class Stacja_pomiarowa
     {
 
         [XmlIgnore] public string nazwa;
@@ -42,6 +42,10 @@ namespace System_Pogoda___Projekt
             Zjawiska.Add(zp);
         }
 
+        public void Sortuj()
+        {
+            Zjawiska.Sort();
+        }
 
         public override string ToString()
         {
