@@ -21,18 +21,23 @@
             </Button.Background>
         </Button>
         <Label Content="Wpisz nazwę miasta" HorizontalAlignment="Left" Margin="294,10,0,0" VerticalAlignment="Top" Height="47" Width="228" FontSize="22" Foreground="#FFBFC6D1"/>
-        <Image HorizontalAlignment="Left" Height="88" Margin="127,125,0,0" VerticalAlignment="Top" Width="87" Source="temperatura.png" OpacityMask="Black"/>
-        <Image HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="opad.png"/>
-        <Image HorizontalAlignment="Left" Height="89" Margin="127,385,0,0" VerticalAlignment="Top" Width="87" Source="humidity.png"/>
-        <Image HorizontalAlignment="Left" Height="88" Margin="540,125,0,0" VerticalAlignment="Top" Width="94" Source="sunrise.png"/>
-        <Image HorizontalAlignment="Left" Height="84" Margin="540,252,0,0" VerticalAlignment="Top" Width="94" Source="sunset.png"/>
-        <Image HorizontalAlignment="Left" Height="89" Margin="540,385,0,0" VerticalAlignment="Top" Width="94" Source="wiatr.png"/>
+        <Image x:Name="temp_image" HorizontalAlignment="Left" Height="88" Margin="127,125,0,0" VerticalAlignment="Top" Width="87" Source="temperatura.png" OpacityMask="Black"/>
+        <Image x:Name="changable_rain" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="opad.png" OpacityMask="Black"/>
+        <Image x:Name="humid" HorizontalAlignment="Left" Height="89" Margin="127,385,0,0" VerticalAlignment="Top" Width="87" Source="humidity.png"/>
+        <Image x:Name="sunrise" HorizontalAlignment="Left" Height="88" Margin="540,125,0,0" VerticalAlignment="Top" Width="94" Source="sunrise.png"/>
+        <Image x:Name="sunset" HorizontalAlignment="Left" Height="84" Margin="540,252,0,0" VerticalAlignment="Top" Width="94" Source="sunset.png"/>
+        <Image x:Name="wind" HorizontalAlignment="Left" Height="89" Margin="540,385,0,0" VerticalAlignment="Top" Width="94" Source="wiatr.png"/>
+        <Image x:Name="sunny" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="sunny_icon.png"/>
+        <Image x:Name="fog" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="foggy.png"/>
+        <Image x:Name="snowy" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="snowy.png" OpacityMask="Black"/>
+        <Image x:Name="cloudy" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="cloudy.png"/>
         <Label x:Name="lab_temperatura" Content="" HorizontalAlignment="Left" Margin="261,149,0,0" VerticalAlignment="Top" Height="43" Width="168" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="22"/>
         <Label x:Name="lab_rain" Content="" HorizontalAlignment="Left" Margin="261,273,0,0" VerticalAlignment="Top" Height="46" Width="168" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="22"/>
         <Label x:Name="lab_humidity" Content="" HorizontalAlignment="Left" Margin="261,411,0,0" VerticalAlignment="Top" Width="168" Height="43" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="22"/>
-        <Label x:Name="lab_sunrise" Content="" HorizontalAlignment="Left" Height="43" Margin="710,149,0,0" VerticalAlignment="Top" Width="171" FontFamily="Century Gothic" FontSize="19" Foreground="#FFBFC6D1"/>
+        <Label x:Name="lab_sunrise" Content="" HorizontalAlignment="Left" Height="43" Margin="710,149,0,0" VerticalAlignment="Top" Width="140" FontFamily="Century Gothic" FontSize="19" Foreground="#FFBFC6D1"/>
         <Label x:Name="lab_sunset" Content="" HorizontalAlignment="Left" Margin="710,273,0,0" VerticalAlignment="Top" Width="140" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
         <Label x:Name="lab_wind" Content="" HorizontalAlignment="Left" Margin="710,411,0,0" VerticalAlignment="Top" Width="140" Height="43" FontFamily="Century Gothic" FontSize="22" Foreground="#FFBFC6D1"/>
+
 
     </Grid>
 </Window>

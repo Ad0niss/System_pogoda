@@ -144,5 +144,17 @@
       <Name>System_Pogoda-Projekt</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sunny_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="foggy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="snowy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cloudy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -95,7 +95,8 @@ namespace System_Pogoda___Projekt
 
         [XmlIgnore]
         public double SrednieCisnienieAtm
-        {
+        {   
+            
             get => srednieCisnienieAtm;
             set
             {
@@ -105,6 +106,7 @@ namespace System_Pogoda___Projekt
                 }
                 else
                 {
+                    
                     throw new WrongCisnienieException();
                 }
 

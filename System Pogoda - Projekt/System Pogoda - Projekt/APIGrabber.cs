@@ -17,7 +17,7 @@ namespace System_Pogoda___Projekt
 
         public APIGrabber(string city) 
         {
-            this.City = city;
+            City = city;
         }
 
         public string[] API()
@@ -30,11 +30,11 @@ namespace System_Pogoda___Projekt
                 string xmlContent = client.DownloadString(CurrentURL);
                 doc.LoadXml(xmlContent);
                 Console.WriteLine(xmlContent);
-                
+                Console.WriteLine("pyk");
             }
             // pobieram dane pogodowe z xml'a( temp, wilgotnosc, wiatr,ogolne warunki pogodowe, wschod i zachod slonca. Na dole jest algorytm wyłuskujący wszystkie dane z pliku xml
             
-            string[] tab_zjawisk = { "temperature", "humidity","speed","weather", "sun", "sun" };
+            string[] tab_zjawisk = { "temperature", "humidity","speed","weather", "sun", "sun", "weather"};
             int j = 0;
             foreach (string i in tab_zjawisk)
             {
@@ -47,6 +47,10 @@ namespace System_Pogoda___Projekt
                 {
                     value = "set";
                 }
+                if (j == 6)
+                {
+                    value = "number";
+                }
                 string temp_name = "//" + i;
                 XmlNode temporary_node = doc.SelectSingleNode(temp_name);
                 XmlAttribute temporary_value = temporary_node.Attributes[value];
@@ -54,6 +58,7 @@ namespace System_Pogoda___Projekt
                 tab_zjawisk[j] = zjawisko;
                 j++;
             }
+            Console.WriteLine(Int32.Parse(tab_zjawisk[6]));
             return tab_zjawisk;
             
         }

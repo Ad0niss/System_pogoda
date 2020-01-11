@@ -10,7 +10,9 @@ namespace System_Pogoda___Projekt
     {
         static void Main(string[] args)
         {
-            try
+            APIGrabber cyk = new APIGrabber("Kraków");
+            cyk.API();
+            /*try
             {
                 Centrala c_Slask = new Centrala("Śląsk");
                 Stacja_pomiarowa s1 = new Stacja_pomiarowa("Radzionków", 50);
@@ -49,7 +51,7 @@ namespace System_Pogoda___Projekt
             catch (WrongDataException)
             {
                 Console.WriteLine("Podano nieprawidłowe daty.");
-            }
+            }*/
         }
     }
 }
