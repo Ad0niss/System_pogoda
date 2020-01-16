@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace System_Pogoda___Projekt
-{
+{//
     [Serializable]
     [XmlInclude(typeof(Opad_deszczu))]
     [XmlInclude(typeof(Opad_gradu))]
@@ -80,4 +80,3 @@ namespace System_Pogoda___Projekt
 
     }
 }
-// tutaj kolejna zmianka

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIGrabber.cs" />
     <Compile Include="Burza.cs" />
     <Compile Include="Centrala.cs" />
     <Compile Include="Opad deszczu.cs" />

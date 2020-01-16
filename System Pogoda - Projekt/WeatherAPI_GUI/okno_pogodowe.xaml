@@ -1,0 +1,44 @@
+﻿<Window x:Class="WeatherAPI_GUI.okno_pogodowe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherAPI_GUI"
+        mc:Ignorable="d"
+        Title="okno_pogodowe" Height="540" Width="950" Background="#FF3D3F55">
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="76" LastChildFill="False" VerticalAlignment="Top" Width="942" Background="#FF3D3F55">
+
+        </DockPanel>
+        <TextBox x:Name="Wyszukiwarka" HorizontalAlignment="Left" Height="48"  Margin="540,10,0,0" TextWrapping="Wrap" Text="Szukaj..." VerticalAlignment="Top" Width="310" Background="#FF00ECD6" FontFamily="Century Gothic" FontSize="24" FontStyle="Italic"/>
+        <DockPanel HorizontalAlignment="Left" Height="75" LastChildFill="False" VerticalAlignment="Top" Width="250" Background="#FF00ECD6">
+            <Label Content="System Pogoda" Width="250" FontSize="28" Foreground="#FF505A6A" FontFamily="Century Gothic"/>
+        </DockPanel>
+        <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="
+" HorizontalAlignment="Left" Margin="870,10,0,0" VerticalAlignment="Top" Width="50" Height="48" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="iconfinder_search_pointer_87916.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Wpisz nazwę miasta" HorizontalAlignment="Left" Margin="294,10,0,0" VerticalAlignment="Top" Height="47" Width="228" FontSize="22" Foreground="#FFBFC6D1"/>
+        <Image x:Name="temp_image" HorizontalAlignment="Left" Height="88" Margin="127,125,0,0" VerticalAlignment="Top" Width="87" Source="temperatura.png" OpacityMask="Black"/>
+        <Image x:Name="changable_rain" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="opad.png" OpacityMask="Black"/>
+        <Image x:Name="humid" HorizontalAlignment="Left" Height="89" Margin="127,385,0,0" VerticalAlignment="Top" Width="87" Source="humidity.png"/>
+        <Image x:Name="sunrise" HorizontalAlignment="Left" Height="88" Margin="540,125,0,0" VerticalAlignment="Top" Width="94" Source="sunrise.png"/>
+        <Image x:Name="sunset" HorizontalAlignment="Left" Height="84" Margin="540,252,0,0" VerticalAlignment="Top" Width="94" Source="sunset.png"/>
+        <Image x:Name="wind" HorizontalAlignment="Left" Height="89" Margin="540,385,0,0" VerticalAlignment="Top" Width="94" Source="wiatr.png"/>
+        <Image x:Name="sunny" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="sunny_icon.png"/>
+        <Image x:Name="fog" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="foggy.png"/>
+        <Image x:Name="snowy" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="snowy.png" OpacityMask="Black"/>
+        <Image x:Name="cloudy" HorizontalAlignment="Left" Height="84" Margin="127,252,0,0" VerticalAlignment="Top" Width="87" Source="cloudy.png"/>
+        <Label x:Name="lab_temperatura" Content="" HorizontalAlignment="Left" Margin="261,149,0,0" VerticalAlignment="Top" Height="43" Width="168" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="22"/>
+        <Label x:Name="lab_rain" Content="" HorizontalAlignment="Left" Margin="261,273,0,0" VerticalAlignment="Top" Height="46" Width="168" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="22"/>
+        <Label x:Name="lab_humidity" Content="" HorizontalAlignment="Left" Margin="261,411,0,0" VerticalAlignment="Top" Width="168" Height="43" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="22"/>
+        <Label x:Name="lab_sunrise" Content="" HorizontalAlignment="Left" Height="43" Margin="710,149,0,0" VerticalAlignment="Top" Width="140" FontFamily="Century Gothic" FontSize="19" Foreground="#FFBFC6D1"/>
+        <Label x:Name="lab_sunset" Content="" HorizontalAlignment="Left" Margin="710,273,0,0" VerticalAlignment="Top" Width="140" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+        <Label x:Name="lab_wind" Content="" HorizontalAlignment="Left" Margin="710,411,0,0" VerticalAlignment="Top" Width="140" Height="43" FontFamily="Century Gothic" FontSize="22" Foreground="#FFBFC6D1"/>
+        <Image x:Name="logo_icon" Height="325" Margin="0,149,10,35" VerticalAlignment="Top" Width="932" Source="logo_icon.png"/>
+
+
+    </Grid>
+</Window>

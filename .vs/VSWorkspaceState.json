@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\System Pogoda - Projekt",
-    "\\System Pogoda - Projekt\\System Pogoda - Projekt"
+    "\\System Pogoda - Projekt\\System Pogoda - Projekt",
+    "\\System Pogoda - Projekt\\WeatherAPI_GUI\\Properties"
   ],
-  "SelectedNode": "\\System Pogoda - Projekt\\System Pogoda - Projekt\\Burza.cs",
+  "SelectedNode": "\\System Pogoda - Projekt\\System Pogoda - Projekt.sln",
   "PreviewInSolutionExplorer": false
 }
