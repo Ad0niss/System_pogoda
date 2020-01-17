@@ -1,0 +1,35 @@
+﻿<Window x:Class="WeatherAPI_GUI.TornadoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherAPI_GUI"
+        mc:Ignorable="d"
+        Title="TornadoWindow" Height="540" Width="950" Background="#FF3D3F55">
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="75" LastChildFill="False" VerticalAlignment="Top" Width="250" Background="#FF00ECD6">
+            <Label Content="System Pogoda" Width="250" FontSize="28" Foreground="#FF505A6A" FontFamily="Century Gothic">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+                </Label.Effect>
+            </Label>
+        </DockPanel>
+        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Image x:Name="temp_image" HorizontalAlignment="Left" Height="77" Margin="127,196,0,0" VerticalAlignment="Top" Width="77" Source="temperatura.png" OpacityMask="Black" RenderTransformOrigin="0.565,0.318"/>
+        <Image x:Name="timestart_image" HorizontalAlignment="Left" Height="66" Margin="138,104,0,0" VerticalAlignment="Top" Width="66" Source="timestart2.png" OpacityMask="White">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="4" ShadowDepth="3"/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="timestop_image" HorizontalAlignment="Left" Height="66" Margin="660,104,0,0" VerticalAlignment="Top" Width="66" Source="timestop2.png" OpacityMask="White">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="4" ShadowDepth="3"/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="barometr_image" HorizontalAlignment="Left" Height="84" Margin="652,194,0,0" VerticalAlignment="Top" Width="79" Source="barometr.png" OpacityMask="White">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="4" ShadowDepth="3"/>
+            </Image.Effect>
+        </Image>
+    </Grid>
+</Window>

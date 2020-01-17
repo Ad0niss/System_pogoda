@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -40,6 +41,21 @@ namespace System_Pogoda___Projekt
         public void Dodaj(Zjawisko_pogodowe zp)
         {
             Zjawiska.Add(zp);
+        }
+
+        public List<Zjawisko_pogodowe> WyszukajZjawiskaPoDacie(string data)
+        {
+            DateTime dataNew;
+            List<Zjawisko_pogodowe> listaZjawisk = new List<Zjawisko_pogodowe>();
+            DateTime.TryParseExact(data, new[] { "dd/MM/yyyy", "dd/MM/yyyy", "dd-MM-yyyy", "dd-MM-yyyy", "yyyy.MM.dd", "yyyy.MM.dd", "dd.MM.yyyy", "dd.MM.yyyy" }, null, DateTimeStyles.None, out dataNew);
+            foreach (Zjawisko_pogodowe zp in Zjawiska)
+            {
+                if (zp.DataObserwacji.Date.ToString("dd-MM-yyyy") == dataNew.Date.ToString("dd-MM-yyyy"))
+                {
+                    listaZjawisk.Add(zp);
+                }
+            }
+            return listaZjawisk;
         }
 
         public void Sortuj()

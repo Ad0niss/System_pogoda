@@ -32,7 +32,17 @@ namespace System_Pogoda___Projekt
             Stacje = new List<Stacja_pomiarowa>();
         }
 
-
+        public Stacja_pomiarowa Znajdz(string nazwa)
+        {
+            foreach (Stacja_pomiarowa sp in Stacje)
+            {
+                if (sp.Nazwa == nazwa)
+                {
+                    return sp;
+                }
+            }
+            return null;
+        }
         public string Obszar { get => obszar; set => obszar = value; }
 
         public void DodajStacje(Stacja_pomiarowa s)
@@ -80,3 +90,4 @@ namespace System_Pogoda___Projekt
 
     }
 }
+// tutaj kolejna zmianka

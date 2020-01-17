@@ -58,6 +58,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StacjaWindow.xaml.cs">
+      <DependentUpon>StacjaWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CentralaWindow.xaml.cs">
+      <DependentUpon>CentralaWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TornadoWindow.xaml.cs">
+      <DependentUpon>TornadoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZjawiskaWindow.xaml.cs">
+      <DependentUpon>ZjawiskaWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="StacjaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +87,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="okno_pogodowe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CentralaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TornadoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZjawiskaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

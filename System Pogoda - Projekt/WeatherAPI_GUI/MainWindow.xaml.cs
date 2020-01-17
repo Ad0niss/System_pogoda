@@ -23,18 +23,25 @@ namespace WeatherAPI_GUI
         public MainWindow()
         {
             InitializeComponent();
+            MoveBottomRightEdgeOfWindow();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Pogoda_Click(object sender, RoutedEventArgs e)
         {
-            okno_pogodowe win2 = new okno_pogodowe();
-            win2.Show();
+            okno_pogodowe oknoPogoda = new okno_pogodowe();
+            oknoPogoda.Show();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Stacja_Pogodowa_Click(object sender, RoutedEventArgs e)
         {
-            Window okno_pogodowe = new Window();
-            okno_pogodowe.Show();
+            CentralaWindow centralaPogodowaWindow = new CentralaWindow();
+            centralaPogodowaWindow.Show();
+        }
+
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = 300;
+            Top = 300;
         }
     }
 }

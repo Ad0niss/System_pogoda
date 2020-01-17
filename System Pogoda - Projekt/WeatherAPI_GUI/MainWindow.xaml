@@ -9,16 +9,20 @@
     <Grid>
         <DockPanel HorizontalAlignment="Left" Height="510" LastChildFill="False" VerticalAlignment="Top" Width="248" Margin="0,0,0,-1">
             <Button x:Name="button_pogoda"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
-                     Content="POGODA" Height="95" Margin="0,114,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click" FontSize="22" FontWeight="Medium" Foreground="#FFBFC6D1">
+                     Content="POGODA" Height="95" Margin="0,114,0,0" VerticalAlignment="Top" Width="250" Click="Pogoda_Click" FontSize="22" FontWeight="Medium" Foreground="#FFBFC6D1">
                 <Button.Background>
                     <ImageBrush ImageSource="iconfinder_weather02_4102326.png" Stretch="Uniform" Opacity="0.5"/>
                 </Button.Background>
             </Button>
         </DockPanel>
-        <DockPanel HorizontalAlignment="Left" Height="75" LastChildFill="False" VerticalAlignment="Top" Width="250" Background="#FF98DAD4">
-            <Label Content="System Pogoda" Height="75" VerticalAlignment="Top" Width="250" FontSize="28" Foreground="#FF4F5A6A" Background="#FF00ECD6"/>
+        <DockPanel HorizontalAlignment="Left" Height="75" LastChildFill="False" VerticalAlignment="Top" Width="250" Background="#FF00ECD6">
+            <Label Content="System Pogoda" Width="250" FontSize="28" Foreground="#FF505A6A" FontFamily="Century Gothic">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+                </Label.Effect>
+            </Label>
         </DockPanel>
-        <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="STACJA POGODOWA" HorizontalAlignment="Left" Margin="0,236,0,0" VerticalAlignment="Top" Width="250" Height="95" FontSize="22" Foreground="#FFBFC6D1" Click="Button_Click_1">
+        <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="STACJA POGODOWA" HorizontalAlignment="Left" Margin="0,236,0,0" VerticalAlignment="Top" Width="250" Height="95" FontSize="22" Foreground="#FFBFC6D1" Click="Stacja_Pogodowa_Click">
             <Button.Background>
                 <ImageBrush ImageSource="icon_stacja1.png" Stretch="Uniform" Opacity="0.5"/>
             </Button.Background>
