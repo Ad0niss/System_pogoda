@@ -35,19 +35,20 @@ namespace System_Pogoda___Projekt
                 s1.Dodaj(t1);
                 Console.WriteLine(c_Slask);
                 s1.Sortuj(); //sortowanie zjawisk po dacie rozpoczęcia i zakończenia
-                Console.WriteLine(c_Slask);
+                //Console.WriteLine(c_Slask);
                 c_Slask.ZapiszXML("test.xml"); //serializacja
                 Centrala c_Slask_xml = new Centrala();
                 c_Slask_xml = (Centrala)c_Slask_xml.OdczytajXML("test.xml"); //deserializacja
+                Console.WriteLine("------------------------------------");
                 Console.WriteLine(c_Slask_xml);
 
 
-                List<Zjawisko_pogodowe> zp;
-                zp = s1.WyszukajZjawiskaPoDacie("18-11-2019");
-                foreach (Zjawisko_pogodowe z in zp)
-                {
-                    Console.WriteLine(z);
-                }
+                //List<Zjawisko_pogodowe> zp;
+                //zp = s1.WyszukajZjawiskaPoDacie("18-11-2019");
+                //foreach (Zjawisko_pogodowe z in zp)
+                //{
+                //    Console.WriteLine(z);
+                //}
 
 
             }

@@ -72,8 +72,9 @@ namespace System_Pogoda___Projekt
 
         public virtual void ZapiszXML(string fname)
         {
+            string newPath = Path.GetFullPath(Path.Combine(fname, @"..\..\..\" + fname));
             XmlSerializer xs = new XmlSerializer(typeof(Centrala));
-            using (StreamWriter sw = new StreamWriter(fname))
+            using (StreamWriter sw = new StreamWriter(newPath))
             {
                 xs.Serialize(sw, this);
             }
@@ -81,8 +82,9 @@ namespace System_Pogoda___Projekt
 
         public object OdczytajXML(string fname)
         {
+            string newPath = Path.GetFullPath(Path.Combine(fname, @"..\..\..\"+fname));
             XmlSerializer xs = new XmlSerializer(typeof(Centrala));
-            using (StreamReader sw = new StreamReader(fname))
+            using (StreamReader sw = new StreamReader(newPath))
             {
                 return xs.Deserialize(sw);
             }
