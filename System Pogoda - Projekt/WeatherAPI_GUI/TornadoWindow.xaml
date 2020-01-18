@@ -14,22 +14,37 @@
                 </Label.Effect>
             </Label>
         </DockPanel>
-        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
-        <Image x:Name="temp_image" HorizontalAlignment="Left" Height="77" Margin="127,196,0,0" VerticalAlignment="Top" Width="77" Source="temperatura.png" OpacityMask="Black" RenderTransformOrigin="0.565,0.318"/>
+        <Button x:Name="btn_back_2" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_2_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Image x:Name="temp_image" HorizontalAlignment="Left" Height="77" Margin="127,201,0,0" VerticalAlignment="Top" Width="77" Source="temperatura.png" OpacityMask="Black" RenderTransformOrigin="0.565,0.318"/>
         <Image x:Name="timestart_image" HorizontalAlignment="Left" Height="66" Margin="138,104,0,0" VerticalAlignment="Top" Width="66" Source="timestart2.png" OpacityMask="White">
             <Image.Effect>
                 <DropShadowEffect BlurRadius="4" ShadowDepth="3"/>
             </Image.Effect>
         </Image>
-        <Image x:Name="timestop_image" HorizontalAlignment="Left" Height="66" Margin="660,104,0,0" VerticalAlignment="Top" Width="66" Source="timestop2.png" OpacityMask="White">
+        <Image x:Name="timestop_image" HorizontalAlignment="Left" Height="66" Margin="601,104,0,0" VerticalAlignment="Top" Width="66" Source="timestop2.png" OpacityMask="White">
             <Image.Effect>
                 <DropShadowEffect BlurRadius="4" ShadowDepth="3"/>
             </Image.Effect>
         </Image>
-        <Image x:Name="barometr_image" HorizontalAlignment="Left" Height="84" Margin="652,194,0,0" VerticalAlignment="Top" Width="79" Source="barometr.png" OpacityMask="White">
+        <Image x:Name="barometr_image" HorizontalAlignment="Left" Height="84" Margin="594,201,0,0" VerticalAlignment="Top" Width="79" Source="barometr.png" OpacityMask="White" RenderTransformOrigin="0.5,0.3">
             <Image.Effect>
                 <DropShadowEffect BlurRadius="4" ShadowDepth="3"/>
             </Image.Effect>
         </Image>
+        <Image x:Name="wind" HorizontalAlignment="Left" Height="76" Margin="598,305,0,0" VerticalAlignment="Top" Width="71" Source="wiatr.png"/>
+        <Image x:Name="tornado" HorizontalAlignment="Left" Height="76" Margin="127,305,0,0" VerticalAlignment="Top" Width="71" Source="tornado.png"/>
+        <Label x:Name="lab_SkalaZagrozenia" Content="Zjawisko neutralne" HorizontalAlignment="Left" Margin="138,434,0,0" VerticalAlignment="Top" Height="65" Width="668" FontSize="40" FontFamily="Calibri" FontWeight="Bold" FontStyle="Italic" Foreground="#FF979797" HorizontalContentAlignment="Center">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="lab_rozp" Content="" HorizontalAlignment="Left" Margin="224,116,0,0" VerticalAlignment="Top" Height="43" Width="240" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+        <Label x:Name="lab_temp" Content="" HorizontalAlignment="Left" Margin="224,219,0,0" VerticalAlignment="Top" Height="46" Width="240" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+        <Label x:Name="lab_skalaF" Content="" HorizontalAlignment="Left" Margin="224,315,0,0" VerticalAlignment="Top" Width="240" Height="43" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+        <Label x:Name="lab_zak" Content="" HorizontalAlignment="Left" Height="43" Margin="696,116,0,0" VerticalAlignment="Top" Width="226" FontFamily="Century Gothic" FontSize="19" Foreground="#FFBFC6D1"/>
+        <Label x:Name="lab_wind" Content="" HorizontalAlignment="Left" Margin="696,323,0,0" VerticalAlignment="Top" Width="226" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+        <Label x:Name="lab_pressure" Content="" HorizontalAlignment="Left" Margin="696,219,0,0" VerticalAlignment="Top" Width="226" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+
+
     </Grid>
 </Window>

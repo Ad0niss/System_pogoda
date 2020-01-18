@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BurzaWindow.xaml.cs">
+      <DependentUpon>BurzaWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StacjaWindow.xaml.cs">
       <DependentUpon>StacjaWindow.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
     <Compile Include="ZjawiskaWindow.xaml.cs">
       <DependentUpon>ZjawiskaWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="BurzaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StacjaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -164,7 +171,9 @@
     <Resource Include="sunset.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="wiatr.png" />
+    <Resource Include="wiatr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\System Pogoda - Projekt\System Pogoda - Projekt.csproj">
@@ -186,6 +195,38 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="barometr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tornado.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="timestop2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="timestart2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="blyskawica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="opady1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="typopadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="srednica.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

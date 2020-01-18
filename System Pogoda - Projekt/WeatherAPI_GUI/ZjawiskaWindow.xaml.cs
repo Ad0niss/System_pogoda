@@ -72,7 +72,19 @@ namespace WeatherAPI_GUI
                 {
                     if (strlistfromlistbox[1] == zp.GetType().Name.Replace("_", " ").ToString())
                     {
-                        MessageBox.Show(zp.Temperatura.ToString());
+                        if (zp.GetType().Name == "Tornado")
+                        {
+                            TornadoWindow cw = new TornadoWindow((Tornado)zp);
+                            cw.Show();
+                            break;
+                        }
+                        else if (zp.GetType().Name == "Burza")
+                        {
+                            BurzaWindow cw = new BurzaWindow((Burza)zp);
+                            cw.Show();
+                            break;
+                        }
+
                     }
                 }
             }

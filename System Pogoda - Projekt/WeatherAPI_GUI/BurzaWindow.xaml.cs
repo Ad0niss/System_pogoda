@@ -16,26 +16,29 @@ using System_Pogoda___Projekt;
 namespace WeatherAPI_GUI
 {
     /// <summary>
-    /// Logika interakcji dla klasy TornadoWindow.xaml
+    /// Logika interakcji dla klasy BurzaWindow.xaml
     /// </summary>
-    public partial class TornadoWindow : Window
+    public partial class BurzaWindow : Window
     {
-
-        public TornadoWindow(Tornado zp)
+        public BurzaWindow(Burza zp)
         {
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
-            wind.Visibility = Visibility.Visible;
-            temp_image.Visibility = Visibility.Visible;
-            timestart_image.Visibility = Visibility.Visible;
-            timestop_image.Visibility = Visibility.Visible;
-            barometr_image.Visibility = Visibility.Visible;
-            tornado.Visibility = Visibility.Visible;
+            //wind.Visibility = Visibility.Visible;
+            //temp_image.Visibility = Visibility.Visible;
+            //timestart_image.Visibility = Visibility.Visible;
+            //timestop_image.Visibility = Visibility.Visible;
+            //barometr_image.Visibility = Visibility.Visible;
+            //blyskawica.Visibility = Visibility.Visible;
+            //opady.Visibility = Visibility.Visible;
             lab_rozp.Content = zp.DataObserwacji.ToString("dd-MM-yyyy HH:mm");
             lab_zak.Content = zp.DataZakonczenia.ToString("dd-MM-yyyy HH:mm");
             lab_wind.Content = zp.PredkoscWiatru + " m/s";
             lab_temp.Content = zp.Temperatura + "°C";
             lab_pressure.Content = zp.SrednieCisnienieAtm + " hPa";
+            lab_blyskawica.Content = zp.IloscWyladowan + " wyładowań";
+            lab_opady.Content = zp.IloscOpadowNaM2 + "mm na metr kwadratowy";
+            lab_srednica.Content = "Średnica kropel: " + zp.SrednicaKropel + "mm";
             if (zp.zagrozenie == Skala_zagr.neutralne)
             {
                 lab_SkalaZagrozenia.Content = "Zjawisko neutralne";
@@ -56,32 +59,19 @@ namespace WeatherAPI_GUI
                 lab_SkalaZagrozenia.Content = "Zjawisko bardzo niebezpieczne!!!";
                 lab_SkalaZagrozenia.Foreground = Brushes.Red;
             }
-            if (zp.Skala_Fujity == SkalaFujity.F0)
+            if (zp.Typ == Typ.fronatlny)
             {
-                lab_skalaF.Content = "Skala Fujity: F0";
+                lab_typ.Content = "Opad frontalny";
             }
-            else if (zp.Skala_Fujity == SkalaFujity.F1)
+            else if (zp.Typ == Typ.konwekcyjny)
             {
-                lab_skalaF.Content = "Skala Fujity: F1";
+                lab_typ.Content = "Opad konwekcyjny";
             }
-            else if (zp.Skala_Fujity == SkalaFujity.F2)
+            else if (zp.Typ == Typ.orograficzny)
             {
-                lab_skalaF.Content = "Skala Fujity: F2";
-            }
-            else if (zp.Skala_Fujity == SkalaFujity.F3)
-            {
-                lab_skalaF.Content = "Skala Fujity: F3";
-            }
-            else if (zp.Skala_Fujity == SkalaFujity.F4)
-            {
-                lab_skalaF.Content = "Skala Fujity: F4";
-            }
-            else if (zp.Skala_Fujity == SkalaFujity.F5)
-            {
-                lab_skalaF.Content = "Skala Fujity: F5";
+                lab_typ.Content = "Opad orograficzny";
             }
         }
-
         private void MoveBottomRightEdgeOfWindow()
         {
             Left = Application.Current.MainWindow.Left;
