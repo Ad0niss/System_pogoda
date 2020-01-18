@@ -51,25 +51,22 @@ namespace WeatherAPI_GUI
             foreach (Zjawisko_pogodowe z in sp.Zjawiska)
             {
                 counter = 0;
-                //MessageBox.Show("tutaj");
                 if (listbox_Zjawiska.Items.Count == 0)
                 {
                     listbox_Zjawiska.Items.Add(z.dataObserwacji.Date.ToString("dd-MM-yyyy"));
                 }
                 foreach (string lb in listbox_Zjawiska.Items)
                 {
-                    //MessageBox.Show("ilosc: " + listbox_Zjawiska.Items.Count);
-                    if (lb != z.dataObserwacji.Date.ToString("dd-MM-yyyy"))
+                    if (lb == z.dataObserwacji.Date.ToString("dd-MM-yyyy"))
                     {
-                        counter++;
+                        counter = 1;
+                        break;
                     }
                 }
-                if (counter == listbox_Zjawiska.Items.Count)
+                if (counter == 0)
                 {
                     listbox_Zjawiska.Items.Add(z.dataObserwacji.Date.ToString("dd-MM-yyyy"));
                 }
-
-                //listbox_Zjawiska.Items.Add((z.dataObserwacji.ToString("HH:mm") + "    " + z.GetType().Name).Replace("_", " ").ToString());
             }
         }
 
