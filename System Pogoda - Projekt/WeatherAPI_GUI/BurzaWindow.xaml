@@ -33,7 +33,7 @@
         </Image>
         <Image x:Name="wind" HorizontalAlignment="Left" Height="76" Margin="514,274,0,0" VerticalAlignment="Top" Width="70" Source="wiatr.png"/>
         <Image x:Name="opady" HorizontalAlignment="Left" Height="66" Margin="518,355,0,0" VerticalAlignment="Top" Width="62" Source="opady1.png"/>
-        <Image x:Name="typopadow" HorizontalAlignment="Left" Height="67" Margin="348,29,0,0" VerticalAlignment="Top" Width="72" Source="typopadow.png"/>
+        <Image x:Name="typopadow" HorizontalAlignment="Left" Height="67" Margin="340,29,0,0" VerticalAlignment="Top" Width="72" Source="typopadow.png"/>
         <Image x:Name="srednica" HorizontalAlignment="Left" Height="151" Margin="89,309,0,0" VerticalAlignment="Top" Width="170" Source="srednica.png"/>
         <Image x:Name="blyskawica" HorizontalAlignment="Left" Height="76" Margin="123,277,0,0" VerticalAlignment="Top" Width="71" Source="blyskawica.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
@@ -57,7 +57,7 @@
         <Label x:Name="lab_wind" Content="" HorizontalAlignment="Left" Margin="612,285,0,0" VerticalAlignment="Top" Width="298" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
         <Label x:Name="lab_pressure" Content="" HorizontalAlignment="Left" Margin="612,203,0,0" VerticalAlignment="Top" Width="298" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
         <Label x:Name="lab_opady" Content="" HorizontalAlignment="Left" Margin="612,365,0,0" VerticalAlignment="Top" Width="298" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
-        <Label x:Name="lab_typ" Content="" HorizontalAlignment="Left" Margin="443,29,0,0" VerticalAlignment="Top" Width="226" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
+        <Label x:Name="lab_typ" Content="" HorizontalAlignment="Left" Margin="417,42,0,0" VerticalAlignment="Top" Width="226" Height="46" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
         <Label x:Name="lab_srednica" Content="" HorizontalAlignment="Left" Margin="223,367,0,0" VerticalAlignment="Top" Width="240" Height="44" Foreground="#FFBFC6D1" FontFamily="Century Gothic" FontSize="19"/>
 
     </Grid>

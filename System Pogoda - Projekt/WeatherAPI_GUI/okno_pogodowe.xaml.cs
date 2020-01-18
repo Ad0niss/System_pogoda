@@ -71,7 +71,6 @@ namespace WeatherAPI_GUI
                 lab_sunset.Content = "";
                 lab_ApiError.Content = "Podano błędną nazwę miasta!!";
                 ukryj();
-
             }
         }
 
@@ -80,6 +79,7 @@ namespace WeatherAPI_GUI
             Left = Application.Current.MainWindow.Left;
             Top = Application.Current.MainWindow.Top;
         }
+
         private void pokaz(int weather_id)
         {
             wind.Visibility = Visibility.Visible;

@@ -10,7 +10,7 @@
         <Zjawisko_pogodowe xsi:type="Tornado">
           <dataObserwacji>2019-11-17T15:07:00</dataObserwacji>
           <dataZakonczenia>2019-11-19T15:55:00</dataZakonczenia>
-          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <zagrozenie>neutralne</zagrozenie>
           <srednieCisnienieAtm>1000</srednieCisnienieAtm>
           <temperatura>32</temperatura>
           <predkoscWiatru>55</predkoscWiatru>
@@ -25,6 +25,121 @@
           <temperatura>-24</temperatura>
           <predkoscWiatru>55</predkoscWiatru>
           <czasTrwania>4368</czasTrwania>
+          <Typ>fronatlny</Typ>
+          <IloscOpadowNaM2>315</IloscOpadowNaM2>
+          <SrednicaKropel>4</SrednicaKropel>
+          <IloscWyladowan>15</IloscWyladowan>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2019-11-17T15:08:00</dataObserwacji>
+          <dataZakonczenia>2019-11-19T15:55:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1000</srednieCisnienieAtm>
+          <temperatura>32</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>2927</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2019-11-17T15:09:00</dataObserwacji>
+          <dataZakonczenia>2019-11-19T15:55:00</dataZakonczenia>
+          <zagrozenie>niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1000</srednieCisnienieAtm>
+          <temperatura>32</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>2926</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2019-11-17T15:10:00</dataObserwacji>
+          <dataZakonczenia>2019-11-19T15:55:00</dataZakonczenia>
+          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1000</srednieCisnienieAtm>
+          <temperatura>32</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>2925</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2019-11-17T15:11:00</dataObserwacji>
+          <dataZakonczenia>2019-11-19T15:55:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1000</srednieCisnienieAtm>
+          <temperatura>32</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>2924</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2019-11-17T15:12:00</dataObserwacji>
+          <dataZakonczenia>2019-11-19T15:55:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1000</srednieCisnienieAtm>
+          <temperatura>32</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>2923</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Burza">
+          <dataObserwacji>2019-11-17T15:18:00</dataObserwacji>
+          <dataZakonczenia>2019-11-21T15:55:00</dataZakonczenia>
+          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1005</srednieCisnienieAtm>
+          <temperatura>-24</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>5797</czasTrwania>
+          <Typ>fronatlny</Typ>
+          <IloscOpadowNaM2>315</IloscOpadowNaM2>
+          <SrednicaKropel>4</SrednicaKropel>
+          <IloscWyladowan>15</IloscWyladowan>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Burza">
+          <dataObserwacji>2019-11-17T15:25:00</dataObserwacji>
+          <dataZakonczenia>2019-11-22T15:55:00</dataZakonczenia>
+          <zagrozenie>niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1005</srednieCisnienieAtm>
+          <temperatura>-24</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>7230</czasTrwania>
+          <Typ>konwekcyjny</Typ>
+          <IloscOpadowNaM2>315</IloscOpadowNaM2>
+          <SrednicaKropel>4</SrednicaKropel>
+          <IloscWyladowan>15</IloscWyladowan>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Burza">
+          <dataObserwacji>2019-11-17T15:45:00</dataObserwacji>
+          <dataZakonczenia>2019-11-23T15:55:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1005</srednieCisnienieAtm>
+          <temperatura>-24</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>8650</czasTrwania>
+          <Typ>orograficzny</Typ>
+          <IloscOpadowNaM2>315</IloscOpadowNaM2>
+          <SrednicaKropel>4</SrednicaKropel>
+          <IloscWyladowan>15</IloscWyladowan>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Burza">
+          <dataObserwacji>2019-11-17T16:07:00</dataObserwacji>
+          <dataZakonczenia>2019-11-24T15:55:00</dataZakonczenia>
+          <zagrozenie>niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1005</srednieCisnienieAtm>
+          <temperatura>-24</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>10068</czasTrwania>
+          <Typ>konwekcyjny</Typ>
+          <IloscOpadowNaM2>315</IloscOpadowNaM2>
+          <SrednicaKropel>4</SrednicaKropel>
+          <IloscWyladowan>15</IloscWyladowan>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Burza">
+          <dataObserwacji>2019-11-17T17:12:00</dataObserwacji>
+          <dataZakonczenia>2019-11-25T15:55:00</dataZakonczenia>
+          <zagrozenie>neutralne</zagrozenie>
+          <srednieCisnienieAtm>1005</srednieCisnienieAtm>
+          <temperatura>-24</temperatura>
+          <predkoscWiatru>55</predkoscWiatru>
+          <czasTrwania>11443</czasTrwania>
           <Typ>fronatlny</Typ>
           <IloscOpadowNaM2>315</IloscOpadowNaM2>
           <SrednicaKropel>4</SrednicaKropel>

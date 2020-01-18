@@ -24,21 +24,14 @@ namespace WeatherAPI_GUI
         {
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
-            //wind.Visibility = Visibility.Visible;
-            //temp_image.Visibility = Visibility.Visible;
-            //timestart_image.Visibility = Visibility.Visible;
-            //timestop_image.Visibility = Visibility.Visible;
-            //barometr_image.Visibility = Visibility.Visible;
-            //blyskawica.Visibility = Visibility.Visible;
-            //opady.Visibility = Visibility.Visible;
             lab_rozp.Content = zp.DataObserwacji.ToString("dd-MM-yyyy HH:mm");
             lab_zak.Content = zp.DataZakonczenia.ToString("dd-MM-yyyy HH:mm");
             lab_wind.Content = zp.PredkoscWiatru + " m/s";
             lab_temp.Content = zp.Temperatura + "°C";
             lab_pressure.Content = zp.SrednieCisnienieAtm + " hPa";
             lab_blyskawica.Content = zp.IloscWyladowan + " wyładowań";
-            lab_opady.Content = zp.IloscOpadowNaM2 + "mm na metr kwadratowy";
-            lab_srednica.Content = "Średnica kropel: " + zp.SrednicaKropel + "mm";
+            lab_opady.Content = zp.IloscOpadowNaM2 + " mm na metr kwadratowy";
+            lab_srednica.Content = "Średnica kropel: " + zp.SrednicaKropel + " mm";
             if (zp.zagrozenie == Skala_zagr.neutralne)
             {
                 lab_SkalaZagrozenia.Content = "Zjawisko neutralne";

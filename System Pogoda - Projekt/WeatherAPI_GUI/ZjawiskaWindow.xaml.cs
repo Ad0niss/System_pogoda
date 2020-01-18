@@ -24,6 +24,7 @@ namespace WeatherAPI_GUI
         string nazwa;
         public ZjawiskaWindow(List<Zjawisko_pogodowe> zp, string name)
         {
+
             nazwa = name;
             zjawiskaList = zp;
             MoveBottomRightEdgeOfWindow();
@@ -50,8 +51,8 @@ namespace WeatherAPI_GUI
             {
                 listbox_Zjawiska.Items.Add(zp.DataObserwacji.ToString("HH:mm") + ", " + zp.GetType().Name.Replace("_", " ").ToString());
             }
-
         }
+
 
         private void ListBox_Zjawiska_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -76,13 +77,11 @@ namespace WeatherAPI_GUI
                         {
                             TornadoWindow cw = new TornadoWindow((Tornado)zp);
                             cw.Show();
-                            break;
                         }
                         else if (zp.GetType().Name == "Burza")
                         {
                             BurzaWindow cw = new BurzaWindow((Burza)zp);
                             cw.Show();
-                            break;
                         }
 
                     }

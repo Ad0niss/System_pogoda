@@ -38,7 +38,7 @@ namespace WeatherAPI_GUI
             centralaPogodowaWindow.Show();
         }
 
-        private void MoveBottomRightEdgeOfWindow()
+        public void MoveBottomRightEdgeOfWindow()
         {
             Left = 300;
             Top = 300;

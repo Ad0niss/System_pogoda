@@ -25,12 +25,6 @@ namespace WeatherAPI_GUI
         {
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
-            wind.Visibility = Visibility.Visible;
-            temp_image.Visibility = Visibility.Visible;
-            timestart_image.Visibility = Visibility.Visible;
-            timestop_image.Visibility = Visibility.Visible;
-            barometr_image.Visibility = Visibility.Visible;
-            tornado.Visibility = Visibility.Visible;
             lab_rozp.Content = zp.DataObserwacji.ToString("dd-MM-yyyy HH:mm");
             lab_zak.Content = zp.DataZakonczenia.ToString("dd-MM-yyyy HH:mm");
             lab_wind.Content = zp.PredkoscWiatru + " m/s";
