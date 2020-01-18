@@ -17,7 +17,7 @@ namespace System_Pogoda___Projekt
             SrednicaPlatkowSniegu = 0;
         }
 
-        public Opad_sniegu(string datar, string dataz, Skala_zagr zagrozenie, double iloscOpadowNa_M2, double srednicaPlatkowSniegu, double srednicaBrylek, Typ typ, decimal temp, double sredniecisnienieatm, double predkoscwiatru) : base(datar, dataz, zagrozenie, iloscOpadowNa_M2, typ, temp, sredniecisnienieatm, predkoscwiatru)
+        public Opad_sniegu(string datar, string dataz, Skala_zagr zagrozenie, double iloscOpadowNa_M2, double srednicaPlatkowSniegu, Typ typ, decimal temp, double sredniecisnienieatm, double predkoscwiatru) : base(datar, dataz, zagrozenie, iloscOpadowNa_M2, typ, temp, sredniecisnienieatm, predkoscwiatru)
         {
             SrednicaPlatkowSniegu = srednicaPlatkowSniegu;
         }

@@ -61,6 +61,15 @@
     <Compile Include="BurzaWindow.xaml.cs">
       <DependentUpon>BurzaWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OpadDeszczuWindow.xaml.cs">
+      <DependentUpon>OpadDeszczuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpadGraduWindow.xaml.cs">
+      <DependentUpon>OpadGraduWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpadSnieguWindow.xaml.cs">
+      <DependentUpon>OpadSnieguWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StacjaWindow.xaml.cs">
       <DependentUpon>StacjaWindow.xaml</DependentUpon>
     </Compile>
@@ -74,6 +83,18 @@
       <DependentUpon>ZjawiskaWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="BurzaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpadDeszczuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpadGraduWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpadSnieguWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -227,6 +248,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="srednica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="platek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="grad.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

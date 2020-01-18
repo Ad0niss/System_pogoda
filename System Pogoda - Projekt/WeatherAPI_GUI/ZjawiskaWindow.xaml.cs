@@ -83,7 +83,21 @@ namespace WeatherAPI_GUI
                             BurzaWindow cw = new BurzaWindow((Burza)zp);
                             cw.Show();
                         }
-
+                        else if (zp.GetType().Name == "Opad_deszczu")
+                        {
+                            OpadDeszczuWindow cw = new OpadDeszczuWindow((Opad_deszczu)zp);
+                            cw.Show();
+                        }
+                        else if (zp.GetType().Name == "Opad_sniegu")
+                        {
+                            OpadSnieguWindow cw = new OpadSnieguWindow((Opad_sniegu)zp);
+                            cw.Show();
+                        }
+                        else if (zp.GetType().Name == "Opad_gradu")
+                        {
+                            OpadGraduWindow cw = new OpadGraduWindow((Opad_gradu)zp);
+                            cw.Show();
+                        }
                     }
                 }
             }
