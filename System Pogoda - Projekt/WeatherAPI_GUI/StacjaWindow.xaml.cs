@@ -20,15 +20,18 @@ namespace WeatherAPI_GUI
     /// </summary>
     public partial class StacjaWindow : Window
     {
+
+        Centrala c_Slask_xml = new Centrala();
         public Stacja_pomiarowa sp;
         string nazwa;
-        public StacjaWindow(string name, Stacja_pomiarowa s)
+        public StacjaWindow(string name)
         {
+            c_Slask_xml = (Centrala)c_Slask_xml.OdczytajXML("test.xml");
+            sp = c_Slask_xml.Znajdz(name);
             nazwa = name;
-            sp = s;
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
-            lab_Stacja.Content = "Stacja pogodowa " + nazwa;
+            lab_Stacja.Content = "Stacja pogodowa " + name;
             lab_Stacja.Visibility = Visibility.Visible;
             DodajListBoxy();
         }
@@ -41,7 +44,16 @@ namespace WeatherAPI_GUI
 
         private void btn_back_1_Click(object sender, RoutedEventArgs e)
         {
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(CentralaWindow))
+                {
+                    window.Close();
+                }
+            }
             Close();
+            CentralaWindow centralaPogodowaWindow = new CentralaWindow();
+            centralaPogodowaWindow.Show();
         }
 
         private void DodajListBoxy()
@@ -80,12 +92,20 @@ namespace WeatherAPI_GUI
                 {
                     if (listbox_Zjawiska.SelectedItem.ToString() == z.DataObserwacji.Date.ToString("dd-MM-yyyy"));
                     {
+                        
                         ZjawiskaWindow zw = new ZjawiskaWindow(zpList, nazwa);
                         zw.Show();
                         break;
                     }
                 }
             }
+        }
+
+        private void btn_add_zjawisko_Click(object sender, RoutedEventArgs e)
+        { 
+            DodajZjawiskoWindow dz = new DodajZjawiskoWindow(sp);
+            dz.Show();
+            Close();
         }
     }
 }

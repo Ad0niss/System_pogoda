@@ -10,12 +10,12 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     [Serializable]
-    public class Stacja_pomiarowa
+    public class Stacja_pomiarowa : ICloneable
     {
 
         [XmlIgnore] public string nazwa;
         [XmlIgnore] public string miejscowosc;
-        [XmlIgnore] public int wysokoscNpm;
+        [XmlIgnore] public double wysokoscNpm;
         [XmlIgnore] public List<Zjawisko_pogodowe> zjawiska;
 
         public Stacja_pomiarowa()
@@ -26,7 +26,7 @@ namespace System_Pogoda___Projekt
             Zjawiska = null;
         }
 
-        public Stacja_pomiarowa(string miejscowosc, int wysokoscNpm)
+        public Stacja_pomiarowa(string miejscowosc, double wysokoscNpm)
         {
             Miejscowosc = miejscowosc;
             WysokoscNpm = wysokoscNpm;
@@ -35,7 +35,7 @@ namespace System_Pogoda___Projekt
 
         public string Nazwa { get => nazwa; set => nazwa = value; }
         public string Miejscowosc { get => miejscowosc; set => miejscowosc = value; }
-        public int WysokoscNpm { get => wysokoscNpm; set => wysokoscNpm = value; }
+        public double WysokoscNpm { get => wysokoscNpm; set => wysokoscNpm = value; }
         public List<Zjawisko_pogodowe> Zjawiska { get => zjawiska; set => zjawiska = value; }
 
         public void Dodaj(Zjawisko_pogodowe zp)
@@ -78,6 +78,16 @@ namespace System_Pogoda___Projekt
                 sb.AppendLine();
             }
             return sb.ToString();
+        }
+
+        public object Clone()
+        {
+            Stacja_pomiarowa klon = new Stacja_pomiarowa(Miejscowosc, WysokoscNpm);
+            foreach (Zjawisko_pogodowe z in Zjawiska)
+            {
+                klon.Zjawiska.Add(z); 
+            }
+            return klon;
         }
     }
 }
