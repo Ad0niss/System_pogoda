@@ -41,7 +41,7 @@ namespace WeatherAPI_GUI
         {
             foreach (Stacja_pomiarowa s in c_Slask_xml.Stacje)
             {
-                listbox_Stacje.Items.Add(s.Nazwa.ToString());
+                listbox_Stacje.Items.Add(s.Nazwa.ToString() + ", " + s.wysokoscNpm + " m.n.p.m");
             }
         }
 
@@ -58,15 +58,20 @@ namespace WeatherAPI_GUI
             {
                 foreach (Stacja_pomiarowa s in c_Slask_xml.Stacje)
                 {
-                    if (listbox_Stacje.SelectedItem.ToString() == s.Nazwa)
+                    if (listbox_Stacje.SelectedItem.ToString() == s.Nazwa + ", " + s.wysokoscNpm + " m.n.p.m")
                     {
-                        Stacja_pomiarowa sp;
-                        sp = c_Slask_xml.Znajdz(s.Nazwa);
-                        StacjaWindow cw = new StacjaWindow(s.Nazwa, sp);
+                        StacjaWindow cw = new StacjaWindow(s.Nazwa);
                         cw.Show();
+                        Close();
                     }
                 }
             }
+        }
+
+        private void btn_add_Click(object sender, RoutedEventArgs e)
+        {
+            DodajStacjeWindow ds = new DodajStacjeWindow();
+            ds.Show();
         }
     }
 }

@@ -49,7 +49,7 @@ namespace System_Pogoda___Projekt
             get => temperatura;
             set
             {
-                if (value >= -60 && value <= 60)
+                if (value >= -50 && value <= 50)
                 {
                     temperatura = value;
                 }

@@ -14,14 +14,16 @@
                 </Label.Effect>
             </Label>
         </DockPanel>
-        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="136" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_add" Content="Dodaj stacje" HorizontalAlignment="Left" Margin="10,383,0,0" VerticalAlignment="Top" Width="136" Height="46" FontSize="22" Click="btn_add_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
         <Label Content="Stacje Pogodowe" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Height="79" Width="932" FontSize="48" Foreground="#FFD2D4D8" FontFamily="Century Gothic" Background="#00000000" HorizontalContentAlignment="Center">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <ListBox x:Name="listbox_Stacje" Height="270" Margin="232,201,232,0" VerticalAlignment="Top" Background="#FFDFDEFB" Foreground="#FF505A6A" SelectionMode="Single" SelectionChanged="ListBox_Stacje_SelectionChanged"/>
-        <Image Height="88" Margin="753,411,41,0" VerticalAlignment="Top" Source="logo_icon.png" Opacity="0.5"/>
+        <ListBox x:Name="listbox_Stacje" Height="270" Margin="232,201,232,0" VerticalAlignment="Top" Background="#FFDFDEFB" Foreground="#FF505A6A" SelectionMode="Single" SelectionChanged="ListBox_Stacje_SelectionChanged">
+        </ListBox>
+        <Image Height="88" Margin="794,0,0,0" VerticalAlignment="Top" Source="logo_icon.png" Opacity="0.5"/>
 
     </Grid>
 </Window>

@@ -10,7 +10,7 @@
         <DockPanel HorizontalAlignment="Left" Height="76" LastChildFill="False" VerticalAlignment="Top" Width="942" Background="#FF3D3F55">
 
         </DockPanel>
-        <TextBox x:Name="Wyszukiwarka" HorizontalAlignment="Left" Height="45"  Margin="540,10,0,0" TextWrapping="Wrap" Text="Szukaj..." VerticalAlignment="Top" Width="310" Background="#FF00ECD6" FontFamily="Century Gothic" FontSize="30" FontStyle="Italic" Foreground="#FF6E6E6E"/>
+        <TextBox x:Name="Wyszukiwarka" HorizontalAlignment="Left" Height="45"  Margin="540,10,0,0" TextWrapping="Wrap" Text="Szukaj..." VerticalAlignment="Top" Width="310" Background="#FF00ECD6" FontFamily="Century Gothic" FontSize="30" FontStyle="Italic" Foreground="#FF6E6E6E" TextChanged="Wyszukiwarka_TextChanged"/>
         <DockPanel HorizontalAlignment="Left" Height="75" LastChildFill="False" VerticalAlignment="Top" Width="250" Background="#FF00ECD6">
             <Label Content="System Pogoda" Width="250" FontSize="28" Foreground="#FF505A6A" FontFamily="Century Gothic">
                 <Label.Effect>

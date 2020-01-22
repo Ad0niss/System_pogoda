@@ -21,16 +21,13 @@ namespace WeatherAPI_GUI
     public partial class ZjawiskaWindow : Window
     {
         public List<Zjawisko_pogodowe> zjawiskaList;
-        string nazwa;
         public ZjawiskaWindow(List<Zjawisko_pogodowe> zp, string name)
         {
-
-            nazwa = name;
             zjawiskaList = zp;
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
             lab_Zjawiska.Content = "Zjawiska pogodowe z dnia " + zjawiskaList[0].DataObserwacji.ToString("dd-MM-yyyy");
-            lab_Stacja_1.Content = nazwa;
+            lab_Stacja_1.Content = name;
             lab_Stacja_1.Visibility = Visibility.Visible;
             DodajListBoxy();
         }

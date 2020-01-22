@@ -116,5 +116,10 @@ namespace WeatherAPI_GUI
         {
             Close();
         }
+
+        private void Wyszukiwarka_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

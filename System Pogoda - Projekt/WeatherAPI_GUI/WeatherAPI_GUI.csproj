@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -61,6 +62,12 @@
     <Compile Include="BurzaWindow.xaml.cs">
       <DependentUpon>BurzaWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DodajStacjeWindow.xaml.cs">
+      <DependentUpon>DodajStacjeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodajZjawiskoWindow.xaml.cs">
+      <DependentUpon>DodajZjawiskoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="OpadDeszczuWindow.xaml.cs">
       <DependentUpon>OpadDeszczuWindow.xaml</DependentUpon>
     </Compile>
@@ -83,6 +90,14 @@
       <DependentUpon>ZjawiskaWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="BurzaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodajStacjeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodajZjawiskoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
