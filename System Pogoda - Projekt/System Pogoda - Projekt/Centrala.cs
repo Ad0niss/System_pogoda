@@ -43,6 +43,10 @@ namespace System_Pogoda___Projekt
             }
             return null;
         }
+        public void Sortuj()
+        {
+            Stacje.Sort();
+        }
 
         public Stacja_pomiarowa ZnajdzStacjePoZjawisku(Zjawisko_pogodowe zp)
         {

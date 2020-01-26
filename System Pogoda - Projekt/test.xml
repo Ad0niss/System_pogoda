@@ -3,74 +3,108 @@
   <obszar>Śląsk</obszar>
   <Stacje>
     <Stacja_pomiarowa>
-      <Nazwa>Śląsk_Katowice/1</Nazwa>
-      <Miejscowosc>Katowice</Miejscowosc>
-      <WysokoscNpm>308.91</WysokoscNpm>
+      <Nazwa>Śląsk_Radzionków/1</Nazwa>
+      <Miejscowosc>Radzionków</Miejscowosc>
+      <WysokoscNpm>124</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Radzionków/2</Nazwa>
+      <Miejscowosc>Radzionków</Miejscowosc>
+      <WysokoscNpm>152</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Bytom/1</Nazwa>
+      <Miejscowosc>Bytom</Miejscowosc>
+      <WysokoscNpm>106</WysokoscNpm>
       <Zjawiska>
         <Zjawisko_pogodowe xsi:type="Opad_deszczu">
-          <dataObserwacji>0001-01-01T00:00:00</dataObserwacji>
-          <dataZakonczenia>2020-02-01T09:12:00</dataZakonczenia>
-          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
-          <srednieCisnienieAtm>999</srednieCisnienieAtm>
-          <temperatura>-1</temperatura>
-          <predkoscWiatru>1</predkoscWiatru>
-          <czasTrwania>1061935752</czasTrwania>
-          <Typ>orograficzny</Typ>
-          <IloscOpadowNaM2>1</IloscOpadowNaM2>
-          <SrednicaKropel>1</SrednicaKropel>
-        </Zjawisko_pogodowe>
-        <Zjawisko_pogodowe xsi:type="Opad_sniegu">
-          <dataObserwacji>0001-01-01T00:00:00</dataObserwacji>
-          <dataZakonczenia>2020-01-31T09:13:00</dataZakonczenia>
-          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
-          <srednieCisnienieAtm>999</srednieCisnienieAtm>
-          <temperatura>-1</temperatura>
-          <predkoscWiatru>1</predkoscWiatru>
-          <czasTrwania>1061934313</czasTrwania>
-          <Typ>orograficzny</Typ>
-          <IloscOpadowNaM2>1</IloscOpadowNaM2>
-          <SrednicaPlatkowSniegu>1</SrednicaPlatkowSniegu>
-        </Zjawisko_pogodowe>
-        <Zjawisko_pogodowe xsi:type="Opad_deszczu">
-          <dataObserwacji>0001-01-01T00:00:00</dataObserwacji>
-          <dataZakonczenia>2020-01-18T09:23:00</dataZakonczenia>
+          <dataObserwacji>2020-01-15T14:22:00</dataObserwacji>
+          <dataZakonczenia>2020-01-15T19:15:00</dataZakonczenia>
           <zagrozenie>neutralne</zagrozenie>
-          <srednieCisnienieAtm>1033</srednieCisnienieAtm>
-          <temperatura>-1</temperatura>
-          <predkoscWiatru>1</predkoscWiatru>
-          <czasTrwania>1061915603</czasTrwania>
+          <srednieCisnienieAtm>1015</srednieCisnienieAtm>
+          <temperatura>7.8</temperatura>
+          <predkoscWiatru>14.51</predkoscWiatru>
+          <czasTrwania>293</czasTrwania>
           <Typ>orograficzny</Typ>
-          <IloscOpadowNaM2>1</IloscOpadowNaM2>
-          <SrednicaKropel>1</SrednicaKropel>
+          <IloscOpadowNaM2>10</IloscOpadowNaM2>
+          <SrednicaKropel>1.005</SrednicaKropel>
         </Zjawisko_pogodowe>
         <Zjawisko_pogodowe xsi:type="Burza">
-          <dataObserwacji>2020-01-30T02:14:00</dataObserwacji>
-          <dataZakonczenia>2020-02-01T03:17:00</dataZakonczenia>
-          <zagrozenie>neutralne</zagrozenie>
-          <srednieCisnienieAtm>1073</srednieCisnienieAtm>
-          <temperatura>-7.56</temperatura>
-          <predkoscWiatru>199.76</predkoscWiatru>
-          <czasTrwania>2943</czasTrwania>
-          <Typ>orograficzny</Typ>
-          <IloscOpadowNaM2>103</IloscOpadowNaM2>
-          <SrednicaKropel>2.42</SrednicaKropel>
-          <IloscWyladowan>173</IloscWyladowan>
-        </Zjawisko_pogodowe>
-        <Zjawisko_pogodowe xsi:type="Opad_deszczu">
-          <dataObserwacji>2020-01-06T12:34:00</dataObserwacji>
-          <dataZakonczenia>2020-01-24T13:14:00</dataZakonczenia>
+          <dataObserwacji>2020-01-15T19:21:00</dataObserwacji>
+          <dataZakonczenia>2020-01-15T22:13:00</dataZakonczenia>
           <zagrozenie>możliwie_niebezpieczne</zagrozenie>
-          <srednieCisnienieAtm>1094</srednieCisnienieAtm>
-          <temperatura>-17.07</temperatura>
-          <predkoscWiatru>121.22</predkoscWiatru>
-          <czasTrwania>25960</czasTrwania>
-          <Typ>orograficzny</Typ>
-          <IloscOpadowNaM2>86</IloscOpadowNaM2>
-          <SrednicaKropel>0.937</SrednicaKropel>
+          <srednieCisnienieAtm>1011</srednieCisnienieAtm>
+          <temperatura>4.88</temperatura>
+          <predkoscWiatru>37.56</predkoscWiatru>
+          <czasTrwania>172</czasTrwania>
+          <Typ>konwekcyjny</Typ>
+          <IloscOpadowNaM2>18</IloscOpadowNaM2>
+          <SrednicaKropel>2</SrednicaKropel>
+          <IloscWyladowan>45</IloscWyladowan>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2020-01-15T22:36:00</dataObserwacji>
+          <dataZakonczenia>2020-01-16T03:31:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1020</srednieCisnienieAtm>
+          <temperatura>7.56</temperatura>
+          <predkoscWiatru>217.68</predkoscWiatru>
+          <czasTrwania>295</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Opad_gradu">
+          <dataObserwacji>2020-01-16T21:13:00</dataObserwacji>
+          <dataZakonczenia>2020-01-17T23:39:00</dataZakonczenia>
+          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1026</srednieCisnienieAtm>
+          <temperatura>2.68</temperatura>
+          <predkoscWiatru>25.61</predkoscWiatru>
+          <czasTrwania>1586</czasTrwania>
+          <Typ>fronatlny</Typ>
+          <IloscOpadowNaM2>21</IloscOpadowNaM2>
+          <SrednicaBrylekLodu>3.961</SrednicaBrylekLodu>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Opad_sniegu">
+          <dataObserwacji>2020-01-21T14:12:00</dataObserwacji>
+          <dataZakonczenia>2020-01-22T15:12:00</dataZakonczenia>
+          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>982</srednieCisnienieAtm>
+          <temperatura>1.98</temperatura>
+          <predkoscWiatru>32.44</predkoscWiatru>
+          <czasTrwania>1500</czasTrwania>
+          <Typ>fronatlny</Typ>
+          <IloscOpadowNaM2>16</IloscOpadowNaM2>
+          <SrednicaPlatkowSniegu>0.917</SrednicaPlatkowSniegu>
         </Zjawisko_pogodowe>
       </Zjawiska>
     </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Zabrze/1</Nazwa>
+      <Miejscowosc>Zabrze</Miejscowosc>
+      <WysokoscNpm>60</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Katowice/1</Nazwa>
+      <Miejscowosc>Katowice</Miejscowosc>
+      <WysokoscNpm>64</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Ruda Śląska/1</Nazwa>
+      <Miejscowosc>Ruda Śląska</Miejscowosc>
+      <WysokoscNpm>64</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Tarnowskie Góry/1</Nazwa>
+      <Miejscowosc>Tarnowskie Góry</Miejscowosc>
+      <WysokoscNpm>97</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
   </Stacje>
-  <liczba_porzadkowa>-5</liczba_porzadkowa>
+  <liczba_porzadkowa>1</liczba_porzadkowa>
   <Obszar>Śląsk</Obszar>
 </Centrala>

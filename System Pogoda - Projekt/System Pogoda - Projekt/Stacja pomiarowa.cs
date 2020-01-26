@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     [Serializable]
-    public class Stacja_pomiarowa : ICloneable
+    public class Stacja_pomiarowa : ICloneable, IComparable<Stacja_pomiarowa>
     {
 
         [XmlIgnore] public string nazwa;
@@ -89,6 +89,11 @@ namespace System_Pogoda___Projekt
                 klon.Zjawiska.Add(z); 
             }
             return klon;
+        }
+
+        public int CompareTo(Stacja_pomiarowa other)
+        {
+            return Nazwa.CompareTo(other.Nazwa);
         }
     }
 }

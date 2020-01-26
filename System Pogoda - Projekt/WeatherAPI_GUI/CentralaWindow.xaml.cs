@@ -40,6 +40,7 @@ namespace WeatherAPI_GUI
 
         private void DodajListBoxy()
         {
+            c_Slask_xml.Sortuj();
             foreach (Stacja_pomiarowa s in c_Slask_xml.Stacje)
             {
                 listbox_Stacje.Items.Add(s.Nazwa.ToString() + ", " + s.wysokoscNpm + " m.n.p.m");
