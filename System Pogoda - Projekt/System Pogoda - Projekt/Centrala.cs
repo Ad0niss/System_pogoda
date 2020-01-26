@@ -43,6 +43,21 @@ namespace System_Pogoda___Projekt
             }
             return null;
         }
+        public void Sortuj()
+        {
+            Stacje.Sort();
+        }
+
+        public Stacja_pomiarowa ZnajdzStacjePoZjawisku(Zjawisko_pogodowe zp)
+        {
+            foreach (Stacja_pomiarowa sp in Stacje)
+                if (sp.Zjawiska.Contains(zp))
+                {
+                    return sp;
+                }
+            return null;
+        }
+
         public string Obszar { get => obszar; set => obszar = value; }
 
         public void DodajStacje(Stacja_pomiarowa s)
@@ -57,6 +72,12 @@ namespace System_Pogoda___Projekt
             }
             s.Nazwa = Obszar + "_" + s.Miejscowosc + "/" + liczba_porzadkowa;
             Stacje.Add(s);
+        }
+
+        public void UsunStacje(Stacja_pomiarowa s)
+        {
+            liczba_porzadkowa--;
+            Stacje.Remove(s);
         }
 
         public override string ToString()
@@ -79,6 +100,7 @@ namespace System_Pogoda___Projekt
                 xs.Serialize(sw, this);
             }
         }
+
 
         public object OdczytajXML(string fname)
         {
