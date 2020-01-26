@@ -21,12 +21,13 @@ namespace WeatherAPI_GUI
     public partial class CentralaWindow : Window
     {
         Centrala c_Slask_xml = new Centrala();
-
+        int usuwanie = 0;
         public CentralaWindow()
         {
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
             btn_back_1.Visibility = Visibility.Visible;
+            lab_usuwanie.Visibility = Visibility.Collapsed;
             c_Slask_xml = (Centrala)c_Slask_xml.OdczytajXML("test.xml"); //deserializacja
             DodajListBoxy();
         }
@@ -51,10 +52,9 @@ namespace WeatherAPI_GUI
         }
 
 
-
         private void ListBox_Stacje_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(IsLoaded)
+            if(usuwanie % 2 == 0)
             {
                 foreach (Stacja_pomiarowa s in c_Slask_xml.Stacje)
                 {
@@ -66,12 +66,38 @@ namespace WeatherAPI_GUI
                     }
                 }
             }
+            else
+            {
+                foreach (Stacja_pomiarowa s in c_Slask_xml.Stacje)
+                {
+                    if (listbox_Stacje.SelectedItem.ToString() == s.Nazwa + ", " + s.wysokoscNpm + " m.n.p.m")
+                    {
+                        c_Slask_xml.UsunStacje(s);
+                        c_Slask_xml.ZapiszXML("test.xml");
+                        Close();
+                        return;
+                    }
+                }
+            }
         }
 
         private void btn_add_Click(object sender, RoutedEventArgs e)
         {
             DodajStacjeWindow ds = new DodajStacjeWindow();
             ds.Show();
+        }
+
+        private void btn_delete_Click(object sender, RoutedEventArgs e)
+        {
+            usuwanie++;
+            if (usuwanie % 2 == 0)
+            {
+                lab_usuwanie.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                lab_usuwanie.Visibility = Visibility.Visible;
+            }
         }
     }
 }

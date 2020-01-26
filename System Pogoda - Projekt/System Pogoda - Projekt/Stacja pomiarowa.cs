@@ -43,6 +43,7 @@ namespace System_Pogoda___Projekt
             Zjawiska.Add(zp);
         }
 
+
         public List<Zjawisko_pogodowe> WyszukajZjawiskaPoDacie(string data)
         {
             DateTime dataNew;
