@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\System Pogoda - Projekt",
+    "\\System Pogoda - Projekt\\WeatherAPI_GUI"
   ],
-  "SelectedNode": "\\System Pogoda - Projekt",
+  "SelectedNode": "\\System Pogoda - Projekt\\System Pogoda - Projekt.sln",
   "PreviewInSolutionExplorer": false
 }

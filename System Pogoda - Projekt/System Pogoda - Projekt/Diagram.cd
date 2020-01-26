@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System_Pogoda___Projekt.APIGrabber">
+    <Position X="11" Y="7.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAIAAAACAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\APIGrabber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Burza">
+    <Position X="1.75" Y="19" Width="2" />
+    <InheritanceLine Type="System_Pogoda___Projekt.Opad_deszczu" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="18.328" />
+        <Point X="2.75" Y="19" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Burza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Centrala">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAAAAAAAAEAAAEAAAABAAAAAEAAAAEAAAgABA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Centrala.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Opad_deszczu">
+    <Position X="1.75" Y="16" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Opad deszczu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Opad_gradu">
+    <Position X="6.75" Y="16" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Opad gradu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Opad_sniegu">
+    <Position X="4" Y="16" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Opad sniegu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Opad">
+    <Position X="4" Y="12.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAECAAAAAAAAAAAAAAAAAQAAAAEAAQ=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Opad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Program">
+    <Position X="12.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Stacja_pomiarowa">
+    <Position X="2" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAEAAAAAAAAIAgAACAIQQAgIEAAIBA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Stacja pomiarowa.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Tornado">
+    <Position X="9" Y="12.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Tornado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.WrongCisnienieException">
+    <Position X="27.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\WrongCisnienieException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.WrongDataException">
+    <Position X="17" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\WrongDataException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.WrongPredkoscWiatruException">
+    <Position X="23.75" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\WrongPredkoscWiatruException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.WrongTemperaturaException">
+    <Position X="20" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\WrongTemperaturaException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System_Pogoda___Projekt.Zjawisko_pogodowe">
+    <Position X="6.25" Y="7.25" Width="2.25" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="6.7" />
+        <Point X="7.5" Y="7.151" />
+        <Point X="7.5" Y="7.151" />
+        <Point X="7.5" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAREAAAAQAQQAQBEEAEAQAAAAAAAAQA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Zjawisko pogodowe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Exception">
+    <Position X="22.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Orientation="Bottom" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="6.5" Y="4.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="System.Runtime.Serialization.ISerializable">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Runtime.InteropServices._Exception">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.IComparable&lt;T&gt;">
+    <Position X="4.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.ICloneable">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="System_Pogoda___Projekt.Typ">
+    <Position X="2.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Opad.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="System_Pogoda___Projekt.SkalaFujity">
+    <Position X="7.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAEAAAAEAgCAAAAAAABAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Tornado.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="System_Pogoda___Projekt.Skala_zagr">
+    <Position X="8.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAQAAIAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>System Pogoda - Projekt\System Pogoda - Projekt\Zjawisko pogodowe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
