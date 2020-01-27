@@ -3,18 +3,6 @@
   <obszar>Śląsk</obszar>
   <Stacje>
     <Stacja_pomiarowa>
-      <Nazwa>Śląsk_Radzionków/1</Nazwa>
-      <Miejscowosc>Radzionków</Miejscowosc>
-      <WysokoscNpm>124</WysokoscNpm>
-      <Zjawiska />
-    </Stacja_pomiarowa>
-    <Stacja_pomiarowa>
-      <Nazwa>Śląsk_Radzionków/2</Nazwa>
-      <Miejscowosc>Radzionków</Miejscowosc>
-      <WysokoscNpm>152</WysokoscNpm>
-      <Zjawiska />
-    </Stacja_pomiarowa>
-    <Stacja_pomiarowa>
       <Nazwa>Śląsk_Bytom/1</Nazwa>
       <Miejscowosc>Bytom</Miejscowosc>
       <WysokoscNpm>106</WysokoscNpm>
@@ -81,15 +69,21 @@
       </Zjawiska>
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>
-      <Nazwa>Śląsk_Zabrze/1</Nazwa>
-      <Miejscowosc>Zabrze</Miejscowosc>
-      <WysokoscNpm>60</WysokoscNpm>
-      <Zjawiska />
-    </Stacja_pomiarowa>
-    <Stacja_pomiarowa>
       <Nazwa>Śląsk_Katowice/1</Nazwa>
       <Miejscowosc>Katowice</Miejscowosc>
       <WysokoscNpm>64</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Radzionków/1</Nazwa>
+      <Miejscowosc>Radzionków</Miejscowosc>
+      <WysokoscNpm>124</WysokoscNpm>
+      <Zjawiska />
+    </Stacja_pomiarowa>
+    <Stacja_pomiarowa>
+      <Nazwa>Śląsk_Radzionków/2</Nazwa>
+      <Miejscowosc>Radzionków</Miejscowosc>
+      <WysokoscNpm>152</WysokoscNpm>
       <Zjawiska />
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>
@@ -99,12 +93,12 @@
       <Zjawiska />
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>
-      <Nazwa>Śląsk_Tarnowskie Góry/1</Nazwa>
-      <Miejscowosc>Tarnowskie Góry</Miejscowosc>
-      <WysokoscNpm>97</WysokoscNpm>
+      <Nazwa>Śląsk_Zabrze/1</Nazwa>
+      <Miejscowosc>Zabrze</Miejscowosc>
+      <WysokoscNpm>60</WysokoscNpm>
       <Zjawiska />
     </Stacja_pomiarowa>
   </Stacje>
-  <liczba_porzadkowa>1</liczba_porzadkowa>
+  <liczba_porzadkowa>0</liczba_porzadkowa>
   <Obszar>Śląsk</Obszar>
 </Centrala>
