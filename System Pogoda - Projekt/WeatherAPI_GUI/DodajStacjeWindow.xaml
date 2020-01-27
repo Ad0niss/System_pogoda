@@ -14,8 +14,8 @@
                 </Label.Effect>
             </Label>
         </DockPanel>
-        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="Century Gothic" Background="#FF00ECD4"/>
-        <Button x:Name="btn_add" Content="Dodaj stację" HorizontalAlignment="Left" Margin="612,382,0,0" VerticalAlignment="Top" Width="146" Height="45" FontSize="21" Click="btn_add_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="Century Gothic" Background="#FF00ECD4"/>
+        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_add" Content="Dodaj stacje" HorizontalAlignment="Left" Margin="612,382,0,0" VerticalAlignment="Top" Width="125" Height="45" FontSize="21" Click="btn_add_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
         <Label Content="Dodaj stację" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Height="79" Width="932" FontSize="48" Foreground="#FFD2D4D8" FontFamily="Century Gothic" Background="#00000000" HorizontalContentAlignment="Center">
             <Label.Effect>
                 <DropShadowEffect/>

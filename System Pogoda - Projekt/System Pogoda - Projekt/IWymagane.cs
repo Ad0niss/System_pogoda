@@ -12,6 +12,5 @@ namespace System_Pogoda___Projekt
         void UsunStacje(Stacja_pomiarowa sp);
         Stacja_pomiarowa Znajdz(string nazwa);
         Stacja_pomiarowa ZnajdzStacjePoZjawisku(Zjawisko_pogodowe zp);
-
     }
 }

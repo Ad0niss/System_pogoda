@@ -14,7 +14,7 @@
                 </Label.Effect>
             </Label>
         </DockPanel>
-        <Button x:Name="btn_back_2" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_2_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="Century Gothic" Background="#FF00ECD4"/>
+        <Button x:Name="btn_back_2" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_2_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
         <Image x:Name="temp_image" HorizontalAlignment="Left" Height="77" Margin="126,185,0,0" VerticalAlignment="Top" Width="77" Source="temperatura.png" OpacityMask="Black" RenderTransformOrigin="0.565,0.318"/>
         <Image x:Name="timestart_image" HorizontalAlignment="Left" Height="66" Margin="137,114,0,0" VerticalAlignment="Top" Width="66" Source="timestart2.png" OpacityMask="White">
             <Image.Effect>

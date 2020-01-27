@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\System Pogoda - Projekt",
+    "\\System Pogoda - Projekt\\System Pogoda - Projekt",
     "\\System Pogoda - Projekt\\WeatherAPI_GUI"
   ],
-  "SelectedNode": "\\System Pogoda - Projekt\\WeatherAPI_GUI\\Autorzy.xaml",
+  "SelectedNode": "\\System Pogoda - Projekt\\System Pogoda - Projekt\\Centrala.cs",
   "PreviewInSolutionExplorer": false
 }

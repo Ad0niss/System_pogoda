@@ -27,7 +27,7 @@
                 <ImageBrush ImageSource="icon_stacja1.png" Stretch="Uniform" Opacity="0.5"/>
             </Button.Background>
         </Button>
-        <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="AUTORZY&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,368,0,0" VerticalAlignment="Top" Width="250" Height="95" FontSize="24" Foreground="#FFBFC6D1" Click="Button_Click">
+        <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="AUTORZY&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,368,0,0" VerticalAlignment="Top" Width="250" Height="95" FontSize="24" Foreground="#FFBFC6D1">
             <Button.Background>
                 <ImageBrush ImageSource="iconfinder_users_497224.png" Stretch="Uniform" Opacity="0.5"/>
             </Button.Background>

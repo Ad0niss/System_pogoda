@@ -14,7 +14,7 @@
                 </Label.Effect>
             </Label>
         </DockPanel>
-        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="Century Gothic" Background="#FF00ECD4"/>
+        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
         <Label x:Name="lab_Stacja" Content="" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Top" Height="71" Width="932" FontSize="36" Foreground="#FFD2D4D8" FontFamily="Century Gothic" Background="#00000000" HorizontalContentAlignment="Center">
             <Label.Effect>
                 <DropShadowEffect/>
