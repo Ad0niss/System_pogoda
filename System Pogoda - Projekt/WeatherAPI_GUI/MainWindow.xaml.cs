@@ -43,5 +43,11 @@ namespace WeatherAPI_GUI
             Left = 300;
             Top = 300;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Autorzy a = new Autorzy();
+            a.Show();
+        }
     }
 }

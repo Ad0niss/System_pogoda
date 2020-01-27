@@ -59,6 +59,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Autorzy.xaml.cs">
+      <DependentUpon>Autorzy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BurzaWindow.xaml.cs">
       <DependentUpon>BurzaWindow.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
     <Compile Include="ZjawiskaWindow.xaml.cs">
       <DependentUpon>ZjawiskaWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Autorzy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BurzaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

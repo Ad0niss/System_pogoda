@@ -1,0 +1,49 @@
+﻿<Window x:Class="WeatherAPI_GUI.Autorzy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherAPI_GUI"
+        mc:Ignorable="d"
+        Title="Autorzy" Height="540" Width="950" Background="#FF3D3F55" FontFamily="Century Gothic">
+    <Grid>
+        <DockPanel HorizontalAlignment="Center" Height="75" LastChildFill="False" VerticalAlignment="Top" Width="250" Background="#FF00ECD6">
+            <Label Content="System Pogoda" Width="250" FontSize="28" Foreground="#FF505A6A" FontFamily="Century Gothic" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+                </Label.Effect>
+            </Label>
+        </DockPanel>
+        <Label Content="Michał Puźniak" HorizontalAlignment="Center" Height="79" Margin="343,156,349,0" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Foreground="#FFBFC6D1" FontSize="28" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Patrycja Sagan" HorizontalAlignment="Center" Margin="346,240,346,0" VerticalAlignment="Top" Height="79" Width="250" Foreground="#FFBFC6D1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="28" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Sebastian Waida" HorizontalAlignment="Center" Margin="343,319,346,0" VerticalAlignment="Top" Height="71" Width="253" Foreground="#FFBFC6D1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="28" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Krystian Wojewoda" HorizontalAlignment="Center" Margin="320,368,310,0" VerticalAlignment="Top" Height="104" Width="312" Foreground="#FFBFC6D1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="28" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Julia Przepióra" Height="80"  Margin="0,76,0,0" VerticalAlignment="Top" Width="250" Foreground="#FFBFC6D1" FontWeight="ExtraBold" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontSize="29" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1"/>
+            </Label.Effect>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="419" Margin="188,80,0,10" VerticalAlignment="Center" Width="600" Source="logo_icon.png" Opacity="0.3">
+            <Image.Effect>
+                <BlurEffect/>
+            </Image.Effect>
+        </Image>
+        <Button x:Name="btn_back" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="Century Gothic" Background="#FF00ECD4"/>
+    </Grid>
+</Window>
