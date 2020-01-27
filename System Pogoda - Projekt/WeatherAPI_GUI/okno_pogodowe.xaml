@@ -51,6 +51,6 @@
             </Label.Effect>
         </Label>
         <Image x:Name="logo_icon" Height="325" Margin="0,149,10,35" VerticalAlignment="Top" Width="932" Source="logo_icon.png"/>
-        <Button x:Name="btn_back" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_back" Content="Wstecz" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_Click" Foreground="#FF505A6A" FontWeight="Medium" FontFamily="Century Gothic" Background="#FF00ECD4"/>
     </Grid>
 </Window>

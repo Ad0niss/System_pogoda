@@ -14,7 +14,7 @@
                 </Label.Effect>
             </Label>
         </DockPanel>
-        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="22,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_back_1" Content="Wstecz" HorizontalAlignment="Left" Margin="22,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_back_1_Click" Foreground="#FF505A6A" FontFamily="Century Gothic" Background="#FF00ECD4"/>
         <Label x:Name="lab_dodajZajwisko" Content="Dodaj zjawisko" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Height="79" Width="940" FontSize="48" Foreground="#FFD2D4D8" FontFamily="Century Gothic" Background="#00000000" HorizontalContentAlignment="Center">
             <Label.Effect>
                 <DropShadowEffect/>
@@ -133,7 +133,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Button x:Name="btn_add" Content="Dodaj" HorizontalAlignment="Left" Margin="684,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_add_Click" Foreground="#FF505A6A"  FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_add" Content="Dodaj" HorizontalAlignment="Left" Margin="684,444,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="22" Click="btn_add_Click" Foreground="#FF505A6A"  FontFamily="Century Gothic" Background="#FF00ECD4"/>
         <TextBox x:Name="txtbox_dataObs" HorizontalAlignment="Left" Height="24"  Margin="524,146,0,0" TextWrapping="Wrap" Text="Czas obserwacji:" VerticalAlignment="Top" Width="150" Background="#FFD8FFFB" FontFamily="Century Gothic" FontSize="16" FontStyle="Italic" Foreground="#FF6E6E6E" TextChanged="czasObs_TextChanged"/>
         <TextBox x:Name="txtbox_dataZak" HorizontalAlignment="Left" Height="24"  Margin="524,181,0,0" TextWrapping="Wrap" Text="Czas zakończenia:" VerticalAlignment="Top" Width="150" Background="#FFD8FFFB" FontFamily="Century Gothic" FontSize="16" FontStyle="Italic" Foreground="#FF6E6E6E" TextChanged="czasZak_TextChanged"/>
         <Label x:Name="lab_iloscWyladowan" Content="Skala Fujity" HorizontalAlignment="Left" Margin="265,459,0,0" VerticalAlignment="Top" Height="34" Width="189" FontSize="20" Foreground="Aqua" FontFamily="Century Gothic" Background="#00000000" HorizontalContentAlignment="Center" RenderTransformOrigin="0.54,1.743">
@@ -156,7 +156,7 @@
             <ComboBoxItem Content="F4"/>
             <ComboBoxItem Content="F5"/>
         </ComboBox>
-        <Button x:Name="btn_tryAgain" Content="Spróbuj ponownie" HorizontalAlignment="Left" Margin="699,339,0,0" VerticalAlignment="Top" Width="189" Height="68" FontSize="22" Click="btn_tryAgain_Click" Foreground="#FF505A6A"  FontFamily="MV Boli" Background="#FF00ECD4"/>
+        <Button x:Name="btn_tryAgain" Content="Spróbuj ponownie" HorizontalAlignment="Left" Margin="699,339,0,0" VerticalAlignment="Top" Width="205" Height="68" FontSize="22" Click="btn_tryAgain_Click" Foreground="#FF505A6A"  FontFamily="Century Gothic" Background="#FF00ECD4"/>
         <Label x:Name="lab_format" Content="Wymagany format: &quot;11:11&quot;" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,297,0,0" VerticalAlignment="Top" Width="940" Height="42" FontFamily="Century Gothic" FontSize="24" Foreground="#FFF5C0C0" BorderThickness="0" >
             <Label.Effect>
                 <DropShadowEffect BlurRadius="3" ShadowDepth="4"/>
