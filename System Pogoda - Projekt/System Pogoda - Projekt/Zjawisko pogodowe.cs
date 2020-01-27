@@ -9,6 +9,10 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     public enum Skala_zagr { neutralne, możliwie_niebezpieczne, niebezpieczne, bardzo_niebezpieczne}
+
+    /// <summary>
+    /// Klasa abstrakcyjna zawierająca wspólne parametry dla każdego zjawiska pogodowego 
+    /// </summary>
     public abstract class Zjawisko_pogodowe : IComparable<Zjawisko_pogodowe>
     {
         public DateTime dataObserwacji;
@@ -19,6 +23,9 @@ namespace System_Pogoda___Projekt
         public double predkoscWiatru;
         public double czasTrwania;
 
+        /// <summary>
+        /// Konstruktor bazowy 
+        /// </summary>
         public Zjawisko_pogodowe()
         {
             DataObserwacji = DateTime.Now;
@@ -29,6 +36,9 @@ namespace System_Pogoda___Projekt
             PredkoscWiatru = 0;
         }
 
+        /// <summary>
+        /// Konstruktor parametryczny 
+        /// </summary>
         public Zjawisko_pogodowe(string datar, string dataz, Skala_zagr zagrozenie, decimal temp, double sredniecisnienieatm, double predkoscwiatru)
         {
             DateTime.TryParseExact(datar, new[] { "dd/MM/yyyy HH:mm", "dd/MM/yyyy HH:mm:ss", "dd-MM-yyyy HH:mm", "dd-MM-yyyy HH:mm:ss", "yyyy.MM.dd HH:mm", "yyyy.MM.dd HH:mm:ss", "dd.MM.yyyy HH:mm", "dd.MM.yyyy HH:mm:ss" }, null, DateTimeStyles.None, out dataObserwacji);
@@ -112,6 +122,9 @@ namespace System_Pogoda___Projekt
             }
         }
 
+        /// <summary>
+        /// Funkcja porównująca zjawiska pogodowe na podstawie daty 
+        /// </summary>
         public int CompareTo(Zjawisko_pogodowe other)
         {
             int wynik = DataObserwacji.CompareTo(other.DataObserwacji);

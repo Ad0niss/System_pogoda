@@ -19,6 +19,6 @@ C:\Users\JaixCS\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\Syste
 C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\bin\Debug\System Pogoda - Projekt.exe.config
 C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\bin\Debug\System Pogoda - Projekt.exe
 C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\bin\Debug\System Pogoda - Projekt.pdb
-C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\obj\Debug\System Pogoda - Projekt.csprojAssemblyReference.cache
 C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\obj\Debug\System Pogoda - Projekt.exe
 C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\obj\Debug\System Pogoda - Projekt.pdb
+C:\Users\KnWoj\Source\Repos\Ad0niss\System_pogoda\System Pogoda - Projekt\System Pogoda - Projekt\bin\Debug\System Pogoda - Projekt.xml

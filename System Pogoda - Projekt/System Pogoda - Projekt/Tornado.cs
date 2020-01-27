@@ -8,14 +8,27 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     public enum SkalaFujity { F0, F1, F2, F3, F4, F5};
+
+    /// <summary>
+    /// Klasa tworząca obiekt Tornado
+    /// </summary>
     public class Tornado : Zjawisko_pogodowe
     {
         [XmlIgnore] public SkalaFujity skala_Fujity;
+
+        /// <summary>
+        /// Konstruktor bazowy
+        /// </summary>
+        /// <param name="zp">Zjawisko pogodowe</param>
         public Tornado() : base()
         {
             Skala_Fujity = SkalaFujity.F0;
         }
 
+
+        /// <summary>
+        /// Konstruktor parametryczny
+        /// </summary>
         public Tornado(string datar, string dataz, Skala_zagr zagrozenie, decimal temp, double sredniecisnienieatm, double predkoscwiatru, SkalaFujity skalaFujity) : base(datar, dataz, zagrozenie, temp, sredniecisnienieatm, predkoscwiatru)
         {
             Skala_Fujity = skalaFujity;

@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace System_Pogoda___Projekt
 {
+    /// <summary>
+    /// Klasa obsługująca wyjątek WrongDataException
+    /// </summary>
     internal class WrongDataException : Exception
     {
         public WrongDataException()

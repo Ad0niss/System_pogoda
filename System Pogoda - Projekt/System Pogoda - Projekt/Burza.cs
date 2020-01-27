@@ -7,13 +7,25 @@ using System.Xml.Serialization;
 
 namespace System_Pogoda___Projekt
 {
+    /// <summary>
+    /// Klasa zaweierająca obiekt Burzy
+    /// </summary>
+
     public class Burza: Opad_deszczu
     {
         [XmlIgnore] public int iloscWyladowan;
+        /// <summary>
+        /// Konstruktor bazowy 
+        /// </summary>
+        
         public Burza() : base()
         {
             IloscWyladowan = 0;
         }
+        /// <summary>
+        /// Konstruktor parametryczny
+        /// </summary>
+        /// 
         public Burza(string datar, string dataz, Skala_zagr zagrozenie, int iloscWyladowan, double iloscOpadowNa_M2, double srednicakropel, Typ typ, decimal temp, double sredniecisnienieatm, double predkoscwiatru) : base(datar, dataz, zagrozenie, iloscOpadowNa_M2, srednicakropel, typ, temp, sredniecisnienieatm, predkoscwiatru)
         {
             IloscWyladowan = iloscWyladowan;
@@ -31,4 +43,3 @@ namespace System_Pogoda___Projekt
         }
     }
 }
-// szybki teścik czy wszystko śmiga

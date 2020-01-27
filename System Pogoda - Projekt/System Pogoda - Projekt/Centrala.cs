@@ -15,12 +15,12 @@ namespace System_Pogoda___Projekt
     [XmlInclude(typeof(Burza))]
     [XmlInclude(typeof(Tornado))]
 
+  
+    
     /// <summary>
-    /// 
+    /// Obiekt tej klasy zawiera listę wszystkich stacji pogodowych
     /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <returns></returns>
+
 
 
     public class Centrala : IWymagane
@@ -29,18 +29,28 @@ namespace System_Pogoda___Projekt
         public List<Stacja_pomiarowa> Stacje;
         public int liczba_porzadkowa;
 
+        /// <summary>
+        /// Konstruktor domyślny
+        /// </summary>
         public Centrala()
         {
             Obszar = null;
             Stacje = new List<Stacja_pomiarowa>();
         }
-
+        /// <summary>
+        /// Konstruktor parametryczny 
+        /// </summary>
+        /// <param name="obszar"> Obszar obejmowany przez stację </param>
         public Centrala(string obszar)
         {
             Obszar = obszar;
             Stacje = new List<Stacja_pomiarowa>();
         }
-
+        /// <summary>
+        /// Funkcja znajdująca stację po jej nazwie
+        /// </summary>
+        /// <param name="nazwa"></param>
+        /// <returns> obiekt stacji pomiarowej </returns>
         public Stacja_pomiarowa Znajdz(string nazwa)
         {
             foreach (Stacja_pomiarowa sp in Stacje)
@@ -52,11 +62,18 @@ namespace System_Pogoda___Projekt
             }
             return null;
         }
+        /// <summary>
+        /// Funkcja sortująca po nazwie
+        /// </summary>
         public void Sortuj()
         {
             Stacje.Sort();
         }
-
+        /// <summary>
+        /// Funkcja znajdująca stacje po zjawisku pogodowym
+        /// </summary>
+        /// <param name="zp">Zjawisko pogodowe</param>
+        /// <returns> Zwraca obiekt stacji pomiarowej </returns>
         public Stacja_pomiarowa ZnajdzStacjePoZjawisku(Zjawisko_pogodowe zp)
         {
             foreach (Stacja_pomiarowa sp in Stacje)
@@ -68,7 +85,10 @@ namespace System_Pogoda___Projekt
         }
 
         public string Obszar { get => obszar; set => obszar = value; }
-
+        /// <summary>
+        /// Funkcja dodająca stacje do centrali
+        /// </summary>
+        /// <param name="s">Stacja pomiarowa</param>
         public void DodajStacje(Stacja_pomiarowa s)
         {
             liczba_porzadkowa = 1;
@@ -82,7 +102,10 @@ namespace System_Pogoda___Projekt
             s.Nazwa = Obszar + "_" + s.Miejscowosc + "/" + liczba_porzadkowa;
             Stacje.Add(s);
         }
-
+        /// <summary>
+        /// Funkcja usuwająca stację z centrali 
+        /// </summary>
+        /// <param name="s">Stacja pomiarowa</param>
         public void UsunStacje(Stacja_pomiarowa s)
         {
             liczba_porzadkowa--;
@@ -99,6 +122,10 @@ namespace System_Pogoda___Projekt
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Funkcja serializująca do XML
+        /// </summary>
+        /// <param name="fname">Nazwa pliku</param>
 
         public virtual void ZapiszXML(string fname)
         {
@@ -110,7 +137,11 @@ namespace System_Pogoda___Projekt
             }
         }
 
-
+        /// <summary>
+        /// Funkcja deserializująca plik XML
+        /// </summary>
+        /// <param name="fname">Nazwa pliku</param>
+        /// <returns>Zwraca odczytany obiekt Centrali</returns> 
         public object OdczytajXML(string fname)
         {
             string newPath = Path.GetFullPath(Path.Combine(fname, @"..\..\..\..\"+fname));
@@ -123,4 +154,3 @@ namespace System_Pogoda___Projekt
 
     }
 }
-// tutaj kolejna zmianka

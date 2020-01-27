@@ -112,6 +112,8 @@ namespace WeatherAPI_GUI
             if (comboBox_Zjawiska.SelectedIndex == 0)
             {
                 Pokaz();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Collapsed;
@@ -120,6 +122,8 @@ namespace WeatherAPI_GUI
             else if (comboBox_Zjawiska.SelectedIndex == 1)
             {
                 Pokaz();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Collapsed;
@@ -128,6 +132,8 @@ namespace WeatherAPI_GUI
             else if (comboBox_Zjawiska.SelectedIndex == 2)
             {
                 Pokaz();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Collapsed;
@@ -136,6 +142,8 @@ namespace WeatherAPI_GUI
             else if (comboBox_Zjawiska.SelectedIndex == 3)
             {
                 Pokaz();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Visible;
@@ -146,6 +154,12 @@ namespace WeatherAPI_GUI
             else if (comboBox_Zjawiska.SelectedIndex == 4)
             {
                 Pokaz();
+                lab_srednicaKropel.Visibility = Visibility.Collapsed;
+                lab_srednicaKropel_wart.Visibility = Visibility.Collapsed;
+                slider_srednicaKropel.Visibility = Visibility.Collapsed;
+                lab_iloscOpadow.Visibility = Visibility.Collapsed;
+                lab_iloscOpadow_wart.Visibility = Visibility.Collapsed;
+                slider_iloscOpadow.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Visible;
                 comboBox_skalaFujity.Visibility = Visibility.Visible;
                 lab_iloscWyladowan.Content = "Skala Fujity";
@@ -508,10 +522,6 @@ namespace WeatherAPI_GUI
             {
                 return false;
             }
-            else if (lab_iloscOpadow_wart.Content.ToString().Length <= 1)
-            {
-                return false;
-            }
             else if (lab_temp_wart.Content.ToString().Length <= 1)
             {
                 return false;
@@ -751,6 +761,8 @@ namespace WeatherAPI_GUI
             {
                 Pokaz();
                 PokazStale();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Collapsed;
@@ -760,6 +772,8 @@ namespace WeatherAPI_GUI
             {
                 Pokaz();
                 PokazStale();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Collapsed;
@@ -769,6 +783,8 @@ namespace WeatherAPI_GUI
             {
                 Pokaz();
                 PokazStale();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Collapsed;
@@ -778,6 +794,8 @@ namespace WeatherAPI_GUI
             {
                 Pokaz();
                 PokazStale();
+                lab_iloscOpadow_wart.Visibility = Visibility.Visible;
+                lab_srednicaKropel_wart.Visibility = Visibility.Visible;
                 textBox_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Collapsed;
                 lab_iloscWyladowan.Visibility = Visibility.Visible;
@@ -789,7 +807,13 @@ namespace WeatherAPI_GUI
             {
                 Pokaz();
                 PokazStale();
-                lab_iloscWyladowan.Visibility = Visibility.Visible;
+                lab_srednicaKropel.Visibility = Visibility.Collapsed;
+                lab_srednicaKropel_wart.Visibility = Visibility.Collapsed;
+                slider_srednicaKropel.Visibility = Visibility.Collapsed;
+                lab_iloscOpadow.Visibility = Visibility.Collapsed;
+                lab_iloscOpadow_wart.Visibility = Visibility.Collapsed;
+                slider_iloscOpadow.Visibility = Visibility.Collapsed;
+                lab_iloscWyladowan.Visibility = Visibility.Collapsed;
                 comboBox_skalaFujity.Visibility = Visibility.Visible;
                 lab_iloscWyladowan.Content = "Skala Fujity";
                 if (comboBox_skalaFujity.SelectedIndex == 0)

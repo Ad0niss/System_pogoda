@@ -78,6 +78,52 @@
           <IloscOpadowNaM2>16</IloscOpadowNaM2>
           <SrednicaPlatkowSniegu>0.917</SrednicaPlatkowSniegu>
         </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Opad_sniegu">
+          <dataObserwacji>2020-01-30T08:25:00</dataObserwacji>
+          <dataZakonczenia>2020-01-31T12:45:00</dataZakonczenia>
+          <zagrozenie>możliwie_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1030</srednieCisnienieAtm>
+          <temperatura>-14.24</temperatura>
+          <predkoscWiatru>139.32</predkoscWiatru>
+          <czasTrwania>1700</czasTrwania>
+          <Typ>konwekcyjny</Typ>
+          <IloscOpadowNaM2>52</IloscOpadowNaM2>
+          <SrednicaPlatkowSniegu>0.531</SrednicaPlatkowSniegu>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Opad_deszczu">
+          <dataObserwacji>2020-01-16T14:30:00</dataObserwacji>
+          <dataZakonczenia>2020-01-16T17:45:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1014</srednieCisnienieAtm>
+          <temperatura>12.29</temperatura>
+          <predkoscWiatru>246.54</predkoscWiatru>
+          <czasTrwania>195</czasTrwania>
+          <Typ>konwekcyjny</Typ>
+          <IloscOpadowNaM2>77</IloscOpadowNaM2>
+          <SrednicaKropel>3.863</SrednicaKropel>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Tornado">
+          <dataObserwacji>2020-01-16T11:12:00</dataObserwacji>
+          <dataZakonczenia>2020-01-16T14:12:00</dataZakonczenia>
+          <zagrozenie>bardzo_niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1034</srednieCisnienieAtm>
+          <temperatura>11.54</temperatura>
+          <predkoscWiatru>130.44</predkoscWiatru>
+          <czasTrwania>180</czasTrwania>
+          <Skala_Fujity>F4</Skala_Fujity>
+        </Zjawisko_pogodowe>
+        <Zjawisko_pogodowe xsi:type="Opad_sniegu">
+          <dataObserwacji>2020-01-21T10:24:00</dataObserwacji>
+          <dataZakonczenia>2020-01-29T11:45:00</dataZakonczenia>
+          <zagrozenie>niebezpieczne</zagrozenie>
+          <srednieCisnienieAtm>1033</srednieCisnienieAtm>
+          <temperatura>-1.37</temperatura>
+          <predkoscWiatru>125.98</predkoscWiatru>
+          <czasTrwania>11601</czasTrwania>
+          <Typ>orograficzny</Typ>
+          <IloscOpadowNaM2>50</IloscOpadowNaM2>
+          <SrednicaPlatkowSniegu>1.343</SrednicaPlatkowSniegu>
+        </Zjawisko_pogodowe>
       </Zjawiska>
     </Stacja_pomiarowa>
     <Stacja_pomiarowa>

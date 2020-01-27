@@ -9,6 +9,11 @@ using System.Xml.Serialization;
 
 namespace System_Pogoda___Projekt
 {
+    /// <summary>
+    /// Klasa tworząca obiekt Stacja pomiarowa
+    /// Implementuje interfejs ICloneable oraz IComparable<Stacja_pomiarowa>
+    /// </summary>
+
     public class Stacja_pomiarowa : ICloneable, IComparable<Stacja_pomiarowa>
     {
 
@@ -17,6 +22,11 @@ namespace System_Pogoda___Projekt
         [XmlIgnore] public double wysokoscNpm;
         [XmlIgnore] public List<Zjawisko_pogodowe> zjawiska;
 
+
+        /// <summary>
+        /// Konstruktor bazowy 
+        /// </summary>
+
         public Stacja_pomiarowa()
         {
             Nazwa = null;
@@ -24,7 +34,9 @@ namespace System_Pogoda___Projekt
             WysokoscNpm = 0;
             Zjawiska = null;
         }
-
+        /// <summary>
+        /// Konstruktor parametryczny 
+        /// </summary>
         public Stacja_pomiarowa(string miejscowosc, double wysokoscNpm)
         {
             Miejscowosc = miejscowosc;
@@ -37,12 +49,20 @@ namespace System_Pogoda___Projekt
         public double WysokoscNpm { get => wysokoscNpm; set => wysokoscNpm = value; }
         public List<Zjawisko_pogodowe> Zjawiska { get => zjawiska; set => zjawiska = value; }
 
+        /// <summary>
+        /// Funkcja dodająca do stacji zjawisko pogodowe
+        /// </summary>
+        /// <param name="zp">Zjawisko pogodowe</param>
         public void Dodaj(Zjawisko_pogodowe zp)
         {
             Zjawiska.Add(zp);
         }
 
-
+        /// <summary>
+        /// Funkcja znajdująca w danej stacji zjawisko po dacie
+        /// </summary>
+        /// <param name="data">Data obserwacji zjawiska</param>
+        /// <returns>Lista Zjawisk zaobserwowanych danego dnia</returns>
         public List<Zjawisko_pogodowe> WyszukajZjawiskaPoDacie(string data)
         {
             DateTime dataNew;
@@ -58,6 +78,9 @@ namespace System_Pogoda___Projekt
             return listaZjawisk;
         }
 
+        /// <summary>
+        /// Funkcja sortująca zjawisko po dacie obserwacji
+        /// </summary>
         public void Sortuj()
         {
             Zjawiska.Sort();
@@ -80,6 +103,11 @@ namespace System_Pogoda___Projekt
             return sb.ToString();
         }
 
+
+        /// <summary>
+        /// Funkcja głęboko klonująca stację pomiarową
+        /// </summary>
+        /// <returns> Kopia stacji pomiarowej</returns>
         public object Clone()
         {
             Stacja_pomiarowa klon = new Stacja_pomiarowa(Miejscowosc, WysokoscNpm);
@@ -90,6 +118,9 @@ namespace System_Pogoda___Projekt
             return klon;
         }
 
+        /// <summary>
+        /// Funkcja sortująca stacje po nazwie 
+        /// </summary>
         public int CompareTo(Stacja_pomiarowa other)
         {
             return Nazwa.CompareTo(other.Nazwa);
