@@ -9,7 +9,6 @@ using System.Xml.Serialization;
 
 namespace System_Pogoda___Projekt
 {
-    [Serializable]
     public class Stacja_pomiarowa : ICloneable, IComparable<Stacja_pomiarowa>
     {
 

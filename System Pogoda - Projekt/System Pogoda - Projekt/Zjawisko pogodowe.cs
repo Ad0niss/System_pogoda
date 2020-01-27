@@ -9,7 +9,6 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     public enum Skala_zagr { neutralne, możliwie_niebezpieczne, niebezpieczne, bardzo_niebezpieczne}
-    [Serializable]
     public abstract class Zjawisko_pogodowe : IComparable<Zjawisko_pogodowe>
     {
         public DateTime dataObserwacji;

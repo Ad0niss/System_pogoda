@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 
 namespace System_Pogoda___Projekt
 {
-    [Serializable]
     public class Opad_deszczu : Opad
     {
         [XmlIgnore] public double srednicaKropel;

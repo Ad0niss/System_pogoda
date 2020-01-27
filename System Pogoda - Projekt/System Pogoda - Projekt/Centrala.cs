@@ -14,6 +14,15 @@ namespace System_Pogoda___Projekt
     [XmlInclude(typeof(Opad_sniegu))]
     [XmlInclude(typeof(Burza))]
     [XmlInclude(typeof(Tornado))]
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    /// <returns></returns>
+
+
     public class Centrala : IWymagane
     {
         public string obszar;

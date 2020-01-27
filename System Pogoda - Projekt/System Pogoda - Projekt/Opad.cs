@@ -9,7 +9,6 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     public enum Typ { orograficzny, konwekcyjny, fronatlny};
-    [Serializable]
     public abstract class Opad : Zjawisko_pogodowe
     {
         [XmlIgnore] public Typ typ;

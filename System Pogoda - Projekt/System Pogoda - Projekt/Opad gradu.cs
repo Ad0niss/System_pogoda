@@ -7,7 +7,6 @@ using System.Xml.Serialization;
 
 namespace System_Pogoda___Projekt
 {
-    [Serializable]
     public class Opad_gradu : Opad
     {
         [XmlIgnore] public double srednicaBrylekLodu;

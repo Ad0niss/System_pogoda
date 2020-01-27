@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace System_Pogoda___Projekt
 {
-    [Serializable]
     internal class WrongDataException : Exception
     {
         public WrongDataException()

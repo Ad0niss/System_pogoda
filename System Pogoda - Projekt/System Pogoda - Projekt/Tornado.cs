@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 namespace System_Pogoda___Projekt
 {
     public enum SkalaFujity { F0, F1, F2, F3, F4, F5};
-    [Serializable]
     public class Tornado : Zjawisko_pogodowe
     {
         [XmlIgnore] public SkalaFujity skala_Fujity;
